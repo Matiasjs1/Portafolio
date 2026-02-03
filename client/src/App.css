@@ -3,12 +3,20 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width: 480px){
+    #cards{ grid-template-columns: 1fr; justify-items: center; }
+}
+@media (max-width: 950px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
 @media screen and (max-width: 768px) {
     #skills {
         grid-template-columns: repeat(2, 1fr) !important;
     }
     .projects {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(1, 1fr) !important;
     }
     #home {
         flex-direction: column;
@@ -40,15 +48,21 @@
     nav ul li a p{
         display: none;
     }
+
     #contain-about{
         display: flex !important;
         flex-direction: column !important; 
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 48px;
+        padding-inline: 10px;
     }
     
 }
+
+
+
 body {
     background-color: #0d0d0d;
     color: white;
@@ -218,17 +232,53 @@ h2{
 }
 
 #personal-info{
-    max-width: 600px;
-    margin-bottom:20px
+    flex: 1;
 }
 
 #cards{
-    display:flex;
-    margin-bottom:20px
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 16px;
+    margin-bottom: 20px;
 }
-#contain-about .card{
-    color:blue;
+.stat-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 180px;
+    height: 160px;
+    background: #1f1f1f;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    text-align: center;
+    margin: 10px;
 }
+
+.stat-card h4{
+    margin: 0;
+    font-size: 40px;
+    line-height: 1;
+    color: blue;
+    font-weight: 700;
+}
+
+.stat-card h4 small{
+    margin-left: 6px;
+    font-size: 18px;
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+.stat-card p{
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: .08em;
+    color: #9ca3af;
+    text-transform: uppercase;
+}
+
 .card{
     display: flex;
     width: 150px;
@@ -241,27 +291,6 @@ h2{
     flex-direction: column;
     box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.5);
     margin-inline:10px;
-    
-    
-}
-#experience h4{
-    font-size: 40px;
-}
-#experience p{
-    color:white;
-    opacity:0.5;
-    font-weight: bolder;
-    font-size:16px;
-}
-
-#projectsCompleted h4{
-    font-size: 40px;
-}
-#projectsCompleted p{
-    color:white;
-    opacity:0.5;
-    font-weight: bolder;
-    font-size:16px;
 }
 
 
@@ -279,8 +308,7 @@ h2{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     grid-gap: 20px;
-}
-#skills .card{
+    margin-top: 10px;
 }
 
 
@@ -296,69 +324,60 @@ h2{
 .projects{
     padding-top:30px;
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     grid-gap: 20px;
 }
-.proyecto{
+.project {
     display: flex;
-    width: 200px;
-    height: 200px;
-    background-color: #1a1a1a;
-    border-radius: 20%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: #1a1a1a;
+    border-radius: 40px; 
+    padding: 25px;
+    box-sizing: border-box; 
     box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.5);
-    margin-inline:10px;
-    cursor:pointer;
-   
-}
-.proyecto img{
-    height: 40px;
-    width: auto;
-    
-}
-.proyecto p{
-    font-size: 15px;
-    
-    max-width: 150px;
-}
-.proyecto h2{
-    font-size: 20px;
-    
-
 }
 
+.project-info {
+    margin-bottom: 10px;
+}
 
-#descripcion{
-    display:none;
+.project h2 {
+    font-size: 26px; 
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 200px;
+}
+
+#description {
+    margin-top: auto;
     font-size: 13px;
-}
-/*
-.proyecto:hover #descripcion{
-    display:flex;
-
+    font-weight: bold;
+    color: #888; 
 }
 
-.proyecto:hover p{
-    display:none;
-
-}
-.proyecto:hover img {
-    display:none;
-
-}
-.proyecto:hover h2{
-    display:none;
-
-}
-.proyecto:hover::after p,.proyecto img,.proyecto h2{
-    display:flex;
-
+.text-secondary{
+    color:gray;
 }
 
-.proyecto:hover{
-    background-color: blue;
-
-}*/
+.details{
+    margin-top: 10px;
+    border-radius: 10px;
+    padding:10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.details:hover{
+    background-color:blue;
+    transform: scale(1.01);
+}

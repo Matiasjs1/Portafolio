@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Animedle",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "description": "An interactive web application focused on clean UI, frontend logic, and engaging user interaction through a progressive guessing mechanic.",
+      "repository": "https://github.com/Matiasjs1/Animedle"
+    },
+    {
+      "id": 2,
+      "name": "JBrain",
+      "skills": ["Java","MySQL"],
+      "description": "An educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
+      "repository": "https://github.com/Matiasjs1/JBrain"
+    },
+    {
+      "id": 3,
+      "name": "Paintball",
+      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
+      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface design.",
+      "repository": "https://github.com/Matiasjs1/Reservas-Paintball"
+    },
+    {
+      "id": 4,
+      "name": "MyFit",
+      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
+      "description": "A gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
+      "repository": "https://github.com/Matiasjs1/MyFit"
+    },
+    {
+      "id": 5,
+      "name": "Deb8",
+      "skills": ["React", "MongoDB", "Node.js", "Express"],
+      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.",
+      "repository": "https://github.com/Matiasjs1/deb8"
+    },
+    {
+      "id": 5,
+      "name": "Plant It",
+      "skills": ["React", "MongoDB", "Node.js", "Express"],
+      "description": "A sustainability-focused project combining plant monitoring and a web application to improve plant care management.",
+      "repository": "https://github.com/felig76/Plant-It"
+    }
+  ]
+}
