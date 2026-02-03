@@ -11,7 +11,16 @@ function About() {
             <p><span className="text-secondary">Languages:</span> Spanish, English</p>
           </div>
         </div>
+        <div id="profile">
+          <h3>PROFILE</h3>
+          <p>I enjoy turning ideas into functional and well-structured solutions. I’m comfortable working independently and in team environments, and I value clear communication and responsibility.</p>
+        </div>
+        <div id="how-i-work">
+          <h3>HOW I WORK</h3>
+          <p>I focus on writing clean, readable, and maintainable code. I understand the problem before coding and iterate until the solution feels solid and intuitive. I’m constantly learning and adapting to new technologies.</p>
+        </div>
       </div>
+      
       <h2><span className="blue-text">MY</span> SKILLS</h2>
       <div id="skills">
         <div className="card zoom">
@@ -59,6 +68,7 @@ function About() {
           <p>Arduino</p>
         </div>
       </div>
+      
       <h2><span className="blue-text">MY</span> EDUCATION</h2>
     </section>
   )
