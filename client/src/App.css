@@ -94,8 +94,17 @@ body {
 
 #information {
     display: flex;
-    flex-direction: column;
     max-width: 600px;
+}
+
+.links{
+    display:flex;
+
+}
+.links img{
+    width: 40px;
+    margin-top: 20px;
+    margin-inline: 5px;
 }
 
 #profile2{
@@ -130,6 +139,7 @@ body {
     font-family: 'Poppins';
     font-weight: bolder;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 
