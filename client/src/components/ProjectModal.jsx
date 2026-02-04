@@ -25,6 +25,20 @@ function ProjectModal({ project, onClose }) {
               <Carousel images={project.images} projectName={project.name} />
             </div>
           )}
+          {project.video && (
+            <div className="modal-section">
+              <h4>Video</h4>
+              <div className="video-wrapper">
+                <iframe
+                  src={project.video}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          )}
           {project.description && (
             <p className="modal-description">{project.description}</p>
           )}

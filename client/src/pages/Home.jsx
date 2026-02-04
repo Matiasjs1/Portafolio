@@ -15,8 +15,10 @@ function Home() {
         <p>I focus on building clean, maintainable solutions and continuously improving through real projects.</p>
         <div className="links">
           <button className="zoom" id="cv" onClick={downloadCV}>Download CV</button>
-          <a className="zoom" href="https://github.com/Matiasjs1" target="_blank"><img src="/img/github.png" alt="" /></a>
-          <a className="zoom" href="https://www.linkedin.com/in/matias-sesto-b5aa8b33a" target="_blank"><img src="/img/linkedin.png" alt="" /></a>
+          <div className="social-links">
+            <a href="https://github.com/Matiasjs1" target="_blank"><img src="/img/github.png" alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/matias-sesto-b5aa8b33a" target="_blank"><img src="/img/linkedin.png" alt="LinkedIn" /></a>
+          </div>
         </div>
       </div>
     </section>

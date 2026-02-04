@@ -1,9 +1,12 @@
 import { NavLink, useLocation } from 'react-router-dom'
+import useTheme from "../hooks/useTheme"
 
 function Navbar() {
   const location = useLocation()
   const isHome = location.pathname === '/'
+  const { theme, toggleTheme } = useTheme()
 
+  
   return (
     <nav>
       <NavLink to="/">
@@ -16,28 +19,29 @@ function Navbar() {
         <li className="navElement">
           <NavLink to="/">
             <p>HOME</p>
-            <img src="/img/home.png" alt="home" id="imgHome" />
+            <img className='nav-icon' src="/img/home.png" alt="home" id="imgHome" />
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/about">
             <p>ABOUT</p>
-            <img src="/img/about.png" alt="about" id="imgAbout" />
+            <img className='nav-icon' src="/img/about.png" alt="about" id="imgAbout" />
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/projects">
             <p>PROJECTS</p>
-            <img src="/img/projects.png" alt="projects" id="imgProjects" />
+            <img className='nav-icon' src="/img/projects.png" alt="projects" id="imgProjects" />
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/contact">
             <p>CONTACT</p>
-            <img src="/img/contact.png" alt="contact" id="imgContact" />
+            <img className='nav-icon' src="/img/contact.png" alt="contact" id="imgContact" />
           </NavLink>
         </li>
       </ul>
+      <img className='icon-theme' src={theme === "dark" ? "../img/moon.png" : "../img/sun.png"} alt="theme" onClick={toggleTheme}/>
     </nav>
   )
 }
