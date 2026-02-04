@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+import Carousel from './Caroussel'
 function ProjectModal({ project, onClose }) {
   if (!project) return null
 
@@ -19,6 +19,12 @@ function ProjectModal({ project, onClose }) {
           <button className="modal-close" onClick={onClose} aria-label="Close">×</button>
         </div>
         <div className="modal-body">
+          {Array.isArray(project.images) && project.images.length > 0 && (
+            <div className="modal-section">
+              <h4>Screenshots</h4>
+              <Carousel images={project.images} projectName={project.name} />
+            </div>
+          )}
           {project.description && (
             <p className="modal-description">{project.description}</p>
           )}
@@ -41,43 +47,6 @@ function ProjectModal({ project, onClose }) {
             </div>
           )}
         </div>
-        <style>{`
-          .modal-backdrop{
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            padding: 20px;
-          }
-          .modal{
-            width: 100%;
-            max-width: 720px;
-            background: #111;
-            color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            overflow: hidden;
-          }
-          .modal-header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 20px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-          }
-          .modal-body{
-            padding: 20px;
-            max-height: 70vh;
-            overflow: auto;
-          }
-          .modal-section h4{ margin: 16px 0 6px; }
-          .modal-description{ color: #cfcfcf; }
-          .modal-link{ color: #4da3ff; text-decoration: underline; }
-          .modal-close{ background: transparent; border: none; color: #fff; font-size: 20px; cursor: pointer; line-height: 1; }
-        `}</style>
       </div>
     </div>
   )

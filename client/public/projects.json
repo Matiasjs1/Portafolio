@@ -2,45 +2,95 @@
   "projects": [
     {
       "id": 1,
-      "name": "Animedle",
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "description": "An interactive web application focused on clean UI, frontend logic, and engaging user interaction through a progressive guessing mechanic.",
-      "repository": "https://github.com/Matiasjs1/Animedle"
+      "name": "Plant It",
+      "skills": ["React", "MongoDB", "Node.js", "Express","Arduino"],
+      "description": "A sustainability-focused project combining plant monitoring and a web application to improve plant care management.",
+      "repository": "https://github.com/felig76/Plant-It",
+      "url": "https://plant-it-1-kb8j.onrender.com/",
+      "video": "https://www.youtube.com/watch?v=MwUX9WhQYhI",
+      "images": [
+        ""
+      ]
     },
     {
       "id": 2,
-      "name": "JBrain",
-      "skills": ["Java","MySQL"],
-      "description": "An educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
-      "repository": "https://github.com/Matiasjs1/JBrain"
-    },
-    {
-      "id": 3,
-      "name": "Paintball",
-      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
-      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface design.",
-      "repository": "https://github.com/Matiasjs1/Reservas-Paintball"
-    },
-    {
-      "id": 4,
-      "name": "MyFit",
-      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
-      "description": "A gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
-      "repository": "https://github.com/Matiasjs1/MyFit"
-    },
-    {
-      "id": 5,
       "name": "Deb8",
       "skills": ["React", "MongoDB", "Node.js", "Express"],
       "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.",
-      "repository": "https://github.com/Matiasjs1/deb8"
+      "repository": "https://github.com/Matiasjs1/deb8",
+      "url": "https://deb8-i2su.onrender.com/",
+      "video": "https://youtu.be/Zx_KFn8JMaY",
+      "images": [
+        "../img/screens/deb8-screens/screen1.png",
+        "../img/screens/deb8-screens/screen2.png",
+        "../img/screens/deb8-screens/screen3.png",
+        "../img/screens/deb8-screens/screen4.png",
+        "../img/screens/deb8-screens/screen5.png"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "JBrain",
+      "skills": ["Java","MySQL"],
+      "description": "An educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
+      "repository": "https://github.com/Matiasjs1/JBrain",
+      "url": "",
+      "video": "",
+      "images": [
+        "../img/screens/jbrain-screens/screen1.png",
+        "../img/screens/jbrain-screens/screen2.png",
+        "../img/screens/jbrain-screens/screen3.png",
+        "../img/screens/jbrain-screens/screen4.png"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Paintball",
+      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
+      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface design.",
+      "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
+      "url":"",
+      "video": "",
+      "images": [
+        "../img/screens/paintball-screens/screen1.png",
+        "../img/screens/paintball-screens/screen2.png",
+        "../img/screens/paintball-screens/screen3.png",
+        "../img/screens/paintball-screens/screen4.png",
+        "../img/screens/paintball-screens/screen5.png"
+      ]
     },
     {
       "id": 5,
-      "name": "Plant It",
-      "skills": ["React", "MongoDB", "Node.js", "Express"],
-      "description": "A sustainability-focused project combining plant monitoring and a web application to improve plant care management.",
-      "repository": "https://github.com/felig76/Plant-It"
+      "name": "MyFit",
+      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
+      "description": "A gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
+      "repository": "https://github.com/Matiasjs1/MyFit",
+            "url":"",
+      "video": "",
+      "images": [
+        "../img/screens/myfit-screens/screen1.png",
+        "../img/screens/myfit-screens/screen2.png",
+        "../img/screens/myfit-screens/screen3.png",
+        "../img/screens/myfit-screens/screen4.png",
+        "../img/screens/myfit-screens/screen5.png"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Animedle",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "description": "An interactive web application focused on clean UI, frontend logic, and engaging user interaction through a progressive guessing mechanic.",
+      "repository": "https://github.com/Matiasjs1/Animedle",
+            "url":"",
+      "video": "",
+      "images": [
+        "../img/screens/animedle-screens/screen1.png",
+        "../img/screens/animedle-screens/screen2.png",
+        "../img/screens/animedle-screens/screen3.png",
+        "../img/screens/animedle-screens/screen4.png",
+        "../img/screens/animedle-screens/screen5.png"
+      ]
     }
+    
   ]
 }

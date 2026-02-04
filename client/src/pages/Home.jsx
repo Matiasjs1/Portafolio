@@ -14,6 +14,8 @@ function Home() {
         <h2 className="blue-text">Full Stack Developer</h2>
         <p>I focus on building clean, maintainable solutions and continuously improving through real projects.</p>
         <button className="zoom" id="cv" onClick={downloadCV}>Download CV</button>
+        <a className="zoom" id="" href="https://github.com/Matiasjs1" target="_blank">GitHub</a>
+        <a className="zoom" id="" href="https://www.linkedin.com/in/matias-sesto-b5aa8b33a" target="_blank">Linkedin</a>
       </div>
     </section>
   )
