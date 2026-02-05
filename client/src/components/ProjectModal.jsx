@@ -15,8 +15,21 @@ function ProjectModal({ project, onClose }) {
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
+          <div className="items-left">
           <h3>{project.name}</h3>
+          {project.repository && (
+            <a href={project.repository} target="_blank" rel="noreferrer">
+              <img src="../img/github.png" alt="GitHub" className="modal-github" />
+            </a>
+          )}
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noreferrer">
+              <button>View demo</button>
+            </a>
+          )}
+          </div>
           <button className="modal-close" onClick={onClose} aria-label="Close">×</button>
+          
         </div>
         <div className="modal-body">
           {Array.isArray(project.images) && project.images.length > 0 && (

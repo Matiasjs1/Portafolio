@@ -639,3 +639,16 @@ html[data-theme="light"] nav ul li:hover .nav-icon{
     border: 0;
     border-radius: 12px;
 }
+
+.modal-github{
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+
+.items-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
