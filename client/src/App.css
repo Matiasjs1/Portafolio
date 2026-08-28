@@ -243,12 +243,28 @@ nav ul li a svg {
 .icon-theme svg { width: 20px; height: 20px; }
 
 @media screen and (max-width: 768px) {
-  nav { padding: 10px 14px; }
+  nav {
+    padding: 10px 16px;
+    justify-content: space-between;
+  }
+  nav ul { gap: 2px; }
   nav ul li a p { display: none; }
   nav ul li a svg { display: block; }
   nav ul li a { padding: 10px; }
-  .nav-controls { right: 14px; gap: 8px; }
-  .lang-toggle { padding: 0 9px; height: 38px; font-size: 12px; }
+  /* en mobile los controles entran en el flujo (no absolutos) para no desbalancear */
+  .nav-controls {
+    position: static;
+    gap: 8px;
+  }
+  .lang-toggle {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .lang-toggle span { display: none; }
+  .icon-theme { width: 38px; height: 38px; }
 }
 
 /* ============ HOME / HERO ============ */
