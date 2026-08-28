@@ -21,8 +21,8 @@
         "/img/screens/animelink-screens/screen4.png",
         "/img/screens/animelink-screens/screen5.png"
       ],
-      "challenge": "Anime fans wanted a fresh daily puzzle to challenge friends, beyond the standard Wordle-style games.",
-      "impact": "A daily Connections-style game with streaks, stats and an archive, running in production alongside Animedle on a shared database."
+      "challenge": "Anime fans had no daily NYT-Connections-style puzzle: group 9 items into 3 hidden categories, one fresh puzzle each day.",
+      "impact": "A daily Connections clone in production (animelink.lat) with a 3x3 grid, a 2/3 proximity hint, one hint per round, 4 dragon-ball lives, anime and character modes, an archive to replay any day, stats and streaks. Full MERN monorepo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, deployed on Vercel + Render, sharing the database with Animedle."
     },
     {
       "id": 2,

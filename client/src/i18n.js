@@ -270,8 +270,8 @@ export const projectDesc = {
 export const projectMeta = {
   en: {
     'Animelink': {
-      challenge: 'Anime fans wanted a fresh daily puzzle to challenge friends, beyond the standard Wordle-style games.',
-      impact: 'A daily Connections-style game with streaks, stats and an archive, running in production alongside Animedle on a shared database.',
+      challenge: 'Anime fans had no daily NYT-Connections-style puzzle: group 9 items into 3 hidden categories, one fresh puzzle each day.',
+      impact: 'A daily Connections clone in production (animelink.lat) with a 3x3 grid, a 2/3 proximity hint, one hint per round, 4 dragon-ball lives, anime and character modes, an archive to replay any day, stats and streaks. Full MERN monorepo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, deployed on Vercel + Render, sharing the database with Animedle.',
     },
     'Animedle': {
       challenge: 'Anime fans had no daily guessing game tailored to their references and characters.',
@@ -308,8 +308,8 @@ export const projectMeta = {
   },
   es: {
     'Animelink': {
-      challenge: 'Los fanáticos del anime querían un puzzle diario nuevo para desafiar a sus amigos, más allá de los juegos tipo Wordle.',
-      impact: 'Un juego diario estilo Connections con rachas, estadísticas y archivo, corriendo en producción junto a Animedle sobre una base compartida.',
+      challenge: 'Los fanáticos del anime no tenían un puzzle diario estilo Connections del NYT: agrupar 9 ítems en 3 categorías ocultas, uno nuevo cada día.',
+      impact: 'Un clone diario de Connections en producción (animelink.lat) con grilla 3x3, sistema de cercanía 2/3, una pista por ronda, 4 esferas del dragón, modos anime y personaje, archivo para rejugar cualquier día, estadísticas y rachas. Monorepo MERN completo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, desplegado en Vercel + Render, compartiendo base de datos con Animedle.',
     },
     'Animedle': {
       challenge: 'Los fanáticos del anime no tenían un juego de adivinanzas diario adaptado a sus referencias y personajes.',
