@@ -94,6 +94,8 @@ export const translations = {
       close: 'Close',
       aboutLabel: 'About',
       stackLabel: 'Stack',
+      challengeLabel: 'The challenge',
+      impactLabel: 'Impact',
       repository: 'Repository',
       thumbAlt: 'preview',
     },
@@ -209,6 +211,8 @@ export const translations = {
       close: 'Cerrar',
       aboutLabel: 'Acerca de',
       stackLabel: 'Stack',
+      challengeLabel: 'El reto',
+      impactLabel: 'Impacto',
       repository: 'Repositorio',
       thumbAlt: 'vista previa',
     },
@@ -241,7 +245,7 @@ export const projectDesc = {
   en: {
     'Animelink': 'Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.',
     'Animedle': 'Wordle-style anime guessing game with multiple modes. Progressive hints, daily challenge, statistics, streaks. Full-stack with shared MongoDB collections (anime/character data).',
-    'Deb8': 'Online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.',
+    'Deb8': 'Web platform for formal, respectful debate. Text and voice debates between 2-4 people, with moderation, sanctions and personal statistics.',
     'First Chatbot': 'Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.',
     'MAYCO': 'Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.',
     'EthereumCodes': 'Smart contracts practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs and access-control patterns. Certified 50-hour professional practicum by ETH KIPU and CABA Technical Schools.',
@@ -252,7 +256,7 @@ export const projectDesc = {
   es: {
     'Animelink': 'Juego de puzzle diario estilo Connections para fanáticos del anime. Grilla 3x3, agrupá 9 ítems en 3 categorías ocultas. Puzzles diarios, archivo, estadísticas, rachas y pistas. Comparte MongoDB con Animedle.',
     'Animedle': 'Juego de adivinanzas estilo Wordle de anime con múltiples modos. Pistas progresivas, desafío diario, estadísticas y rachas. Full-stack con colecciones MongoDB compartidas (datos de anime/personajes).',
-    'Deb8': 'Sistema de reservas online con programación en tiempo real, prevención de reservas duplicadas, pagos online y una interfaz amigable.',
+    'Deb8': 'Plataforma web para el debate formal y respetuoso. Debates por texto y voz entre 2 y 4 personas, con moderación, sanciones y estadísticas personales.',
     'First Chatbot': 'Chatbot de IA conversacional construido con Streamlit y LangChain. Q&A de documentos, memoria de conversación, deployable en Streamlit Cloud.',
     'MAYCO': 'Sistema de gestión logística para empresa de envíos: gestión de conductores, seguimiento de entregas, devoluciones y flujos de despacho. PHP + MySQL a medida con frontend JS vanilla.',
     'EthereumCodes': 'Repositorio de práctica de contratos inteligentes: sistemas de votación (IVotingSystem, VotingSystem), tokens ERC20, NFTs y patrones de control de acceso. Práctica profesionalizante de 50 horas certificada por ETH KIPU y las Escuelas Técnicas de CABA.',
@@ -262,8 +266,92 @@ export const projectDesc = {
   },
 }
 
+// Contexto/Problema (challenge) e Impacto (impact) por proyecto y por idioma.
+export const projectMeta = {
+  en: {
+    'Animelink': {
+      challenge: 'Anime fans wanted a fresh daily puzzle to challenge friends, beyond the standard Wordle-style games.',
+      impact: 'A daily Connections-style game with streaks, stats and an archive, running in production alongside Animedle on a shared database.',
+    },
+    'Animedle': {
+      challenge: 'Anime fans had no daily guessing game tailored to their references and characters.',
+      impact: 'A multi-mode Wordle-style game with progressive hints, daily challenges, streaks and full statistics.',
+    },
+    'Deb8': {
+      challenge: 'Online arguments become chaotic and aggressive, so a formal debating space was needed.',
+      impact: 'A web app for text and voice debates between 2-4 people, with moderation, unanimous expulsion voting, sanctions and personal stats (proyecto integrador 2025).',
+    },
+    'Paintball': {
+      challenge: 'A paintball field needed real-time booking without double reservations and manual admin.',
+      impact: 'A reservation platform with real-time scheduling, duplicate-booking prevention, online payments and an admin panel.',
+    },
+    'MAYCO': {
+      challenge: 'A shipping company had no digital way to coordinate drivers, deliveries and returns.',
+      impact: 'A logistics management system for driver management, delivery tracking, returns and dispatch workflows (PHP + MySQL).',
+    },
+    'MyFit': {
+      challenge: 'Managing gym bars and accessories was error-prone without live availability.',
+      impact: 'A gym equipment system with real-time availability tracking and a simple admin interface.',
+    },
+    'First Chatbot': {
+      challenge: 'Making AI document Q&A accessible without a heavy setup.',
+      impact: 'A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud.',
+    },
+    'EthereumCodes': {
+      challenge: 'Learning Solidity by building real, reusable contract patterns.',
+      impact: 'Voting systems, ERC20 tokens and NFTs with access control, certified by a 50-hour ETH KIPU practicum.',
+    },
+    'JBrain': {
+      challenge: 'Teachers needed a fun quiz tool with roles for students and teachers.',
+      impact: 'An educational quiz game with customizable features, user accounts and persistent results in a MySQL database.',
+    },
+  },
+  es: {
+    'Animelink': {
+      challenge: 'Los fanáticos del anime querían un puzzle diario nuevo para desafiar a sus amigos, más allá de los juegos tipo Wordle.',
+      impact: 'Un juego diario estilo Connections con rachas, estadísticas y archivo, corriendo en producción junto a Animedle sobre una base compartida.',
+    },
+    'Animedle': {
+      challenge: 'Los fanáticos del anime no tenían un juego de adivinanzas diario adaptado a sus referencias y personajes.',
+      impact: 'Un juego estilo Wordle con múltiples modos, pistas progresivas, desafío diario, rachas y estadísticas completas.',
+    },
+    'Deb8': {
+      challenge: 'Los debates online se vuelven caóticos y agresivos, así que hacía falta un espacio formal de discusión.',
+      impact: 'Una app web de debates por texto y voz entre 2 y 4 personas, con moderación, votación unánime para expulsar, sanciones y estadísticas personales (proyecto integrador 2025).',
+    },
+    'Paintball': {
+      challenge: 'Una cancha de paintball necesitaba reservas en tiempo real sin reservas duplicadas ni administración manual.',
+      impact: 'Una plataforma de reservas con programación en tiempo real, prevención de duplicados, pagos online y panel de administración.',
+    },
+    'MAYCO': {
+      challenge: 'Una empresa de envíos no tenía forma digital de coordinar conductores, entregas y devoluciones.',
+      impact: 'Un sistema de gestión logística para conductores, seguimiento de entregas, devoluciones y flujos de despacho (PHP + MySQL).',
+    },
+    'MyFit': {
+      challenge: 'Administrar las barras y accesorios del gimnasio era propenso a errores sin disponibilidad en vivo.',
+      impact: 'Un sistema de equipamiento de gimnasio con disponibilidad en tiempo real y una interfaz de administración simple.',
+    },
+    'First Chatbot': {
+      challenge: 'Hacer accesible el Q&A de documentos con IA sin una configuración pesada.',
+      impact: 'Un chatbot con Streamlit y LangChain para Q&A de documentos con memoria de conversación, deployable en Streamlit Cloud.',
+    },
+    'EthereumCodes': {
+      challenge: 'Aprender Solidity construyendo patrones de contratos reales y reutilizables.',
+      impact: 'Sistemas de votación, tokens ERC20 y NFTs con control de acceso, certificados por una práctica de 50 horas de ETH KIPU.',
+    },
+    'JBrain': {
+      challenge: 'Los docentes necesitaban una herramienta de quiz divertida con roles para alumnos y docentes.',
+      impact: 'Un juego educativo con funciones personalizables, cuentas de usuario y resultados persistentes en base de datos MySQL.',
+    },
+  },
+}
+
 export function getProjectDesc(lang, name, fallback) {
   return (projectDesc[lang] && projectDesc[lang][name]) || (projectDesc.en && projectDesc.en[name]) || fallback
+}
+
+export function getProjectMeta(lang, name) {
+  return (projectMeta[lang] && projectMeta[lang][name]) || (projectMeta.en && projectMeta.en[name]) || null
 }
 
 // Detecta el idioma: primero el guardado, luego la región del navegador.

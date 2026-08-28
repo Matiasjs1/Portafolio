@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { ExternalLink, X } from 'lucide-react'
 import { FiGithub } from 'react-icons/fi'
 import { useLanguage } from '../i18n/useLanguage.js'
-import { getProjectDesc } from '../i18n'
+import { getProjectDesc, getProjectMeta } from '../i18n'
 import Carousel from './Caroussel'
 
 function ProjectModal({ project, onClose }) {
@@ -22,6 +22,8 @@ function ProjectModal({ project, onClose }) {
   }, [project, onClose])
 
   if (!project) return null
+
+  const meta = getProjectMeta(lang, project.name)
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={project.name}>
@@ -51,10 +53,22 @@ function ProjectModal({ project, onClose }) {
               <iframe src={project.video} title={`${project.name} demo`} allowFullScreen loading="lazy" />
             </div>
           )}
+          {meta && (
+            <div className="modal-section">
+              <h4>{t.projects.challengeLabel}</h4>
+              <p className="modal-description">{meta.challenge}</p>
+            </div>
+          )}
           <div className="modal-section">
             <h4>{t.projects.aboutLabel}</h4>
             <p className="modal-description">{getProjectDesc(lang, project.name, project.description)}</p>
           </div>
+          {meta && (
+            <div className="modal-section">
+              <h4>{t.projects.impactLabel}</h4>
+              <p className="modal-description modal-impact">{meta.impact}</p>
+            </div>
+          )}
           {(project.skills || []).length > 0 && (
             <div className="modal-section">
               <h4>{t.projects.stackLabel}</h4>

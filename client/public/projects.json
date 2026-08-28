@@ -20,7 +20,9 @@
         "/img/screens/animelink-screens/screen3.png",
         "/img/screens/animelink-screens/screen4.png",
         "/img/screens/animelink-screens/screen5.png"
-      ]
+      ],
+      "challenge": "Anime fans wanted a fresh daily puzzle to challenge friends, beyond the standard Wordle-style games.",
+      "impact": "A daily Connections-style game with streaks, stats and an archive, running in production alongside Animedle on a shared database."
     },
     {
       "id": 2,
@@ -42,7 +44,9 @@
         "/img/screens/animedle-screens/screen3.png",
         "/img/screens/animedle-screens/screen4.png",
         "/img/screens/animedle-screens/screen5.png"
-      ]
+      ],
+      "challenge": "Anime fans had no daily guessing game tailored to their references and characters.",
+      "impact": "A multi-mode Wordle-style game with progressive hints, daily challenges, streaks and full statistics."
     },
     {
       "id": 3,
@@ -53,7 +57,7 @@
         "Node.js",
         "Express"
       ],
-      "description": "Online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.",
+      "description": "Web platform for formal, respectful debate. Text and voice debates between 2-4 people, with moderation, sanctions and personal statistics.",
       "repository": "https://github.com/Matiasjs1/deb8",
       "url": "",
       "video": "https://www.youtube.com/embed/Zx_KFn8JMaY?si=QQaVQBEq2bo8y0na",
@@ -63,7 +67,9 @@
         "/img/screens/deb8-screens/screen3.png",
         "/img/screens/deb8-screens/screen4.png",
         "/img/screens/deb8-screens/screen5.png"
-      ]
+      ],
+      "challenge": "Online arguments become chaotic and aggressive, so a formal debating space was needed.",
+      "impact": "A web app for text and voice debates between 2-4 people, with moderation, unanimous expulsion voting, sanctions and personal stats (proyecto integrador 2025)."
     },
     {
       "id": 5,
@@ -85,7 +91,9 @@
         "/img/screens/paintball-screens/screen3.png",
         "/img/screens/paintball-screens/screen4.png",
         "/img/screens/paintball-screens/screen5.png"
-      ]
+      ],
+      "challenge": "A paintball field needed real-time booking without double reservations and manual admin.",
+      "impact": "A reservation platform with real-time scheduling, duplicate-booking prevention, online payments and an admin panel."
     },
     {
       "id": 7,
@@ -107,7 +115,9 @@
         "/img/screens/mayco-screens/screen3.png",
         "/img/screens/mayco-screens/screen4.png",
         "/img/screens/mayco-screens/screen5.png"
-      ]
+      ],
+      "challenge": "A shipping company had no digital way to coordinate drivers, deliveries and returns.",
+      "impact": "A logistics management system for driver management, delivery tracking, returns and dispatch workflows (PHP + MySQL)."
     },
     {
       "id": 6,
@@ -129,7 +139,9 @@
         "/img/screens/myfit-screens/screen3.png",
         "/img/screens/myfit-screens/screen4.png",
         "/img/screens/myfit-screens/screen5.png"
-      ]
+      ],
+      "challenge": "Managing gym bars and accessories was error-prone without live availability.",
+      "impact": "A gym equipment system with real-time availability tracking and a simple admin interface."
     },
     {
       "id": 8,
@@ -144,7 +156,9 @@
       "repository": "https://github.com/Matiasjs1/first-chatbot",
       "url": "https://first-chatbot-mjs.streamlit.app/",
       "video": "",
-      "images": []
+      "images": [],
+      "challenge": "Making AI document Q&A accessible without a heavy setup.",
+      "impact": "A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud."
     },
     {
       "id": 9,
@@ -161,7 +175,9 @@
       "video": "",
       "images": [
         "/img/screens/ethereumcodes-screens/screen1.svg"
-      ]
+      ],
+      "challenge": "Learning Solidity by building real, reusable contract patterns.",
+      "impact": "Voting systems, ERC20 tokens and NFTs with access control, certified by a 50-hour ETH KIPU practicum."
     },
     {
       "id": 4,
@@ -180,7 +196,9 @@
         "/img/screens/jbrain-screens/screen2.png",
         "/img/screens/jbrain-screens/screen3.png",
         "/img/screens/jbrain-screens/screen4.png"
-      ]
+      ],
+      "challenge": "Teachers needed a fun quiz tool with roles for students and teachers.",
+      "impact": "An educational quiz game with customizable features, user accounts and persistent results in a MySQL database."
     }
   ]
 }

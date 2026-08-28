@@ -881,6 +881,7 @@ nav ul li a svg {
 
 .modal-section { margin-top: 20px; }
 .modal-section h4 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin: 0 0 10px; }
+.modal-impact { color: var(--text); }
 
 .modal-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .modal-tags span { font-size: 13px; font-weight: 500; color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-pill); padding: 5px 12px; }
