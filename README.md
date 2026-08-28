@@ -1,8 +1,8 @@
 # Portafolio - Matias Sesto
 
-![Portafolio](client/public/img/screens/animelink-screens/screen1.png)
-
-Portafolio personal de **Matias Sesto**, desarrollador Full Stack. SPA construida con **React + Vite**, con tema claro/oscuro, interfaz bilingüe (español/inglés con detección automática por región), galería de proyectos con carrusel y modales, y certificados descargables.
+| | |
+| :--- | :--- |
+| ![Matias Sesto](client/public/img/profile.png) | Portafolio personal de **Matias Sesto**, desarrollador Full Stack. SPA construida con **React + Vite**, con tema claro/oscuro, interfaz bilingüe (español/inglés con detección automática por región), galería de proyectos con carrusel y modales, y certificados descargables. |
 
 ---
 
