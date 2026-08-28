@@ -274,8 +274,8 @@ export const projectMeta = {
       impact: 'A daily Connections clone in production (animelink.lat) with a 3x3 grid, a 2/3 proximity hint, one hint per round, 4 dragon-ball lives, anime and character modes, an archive to replay any day, stats and streaks. Full MERN monorepo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, deployed on Vercel + Render, sharing the database with Animedle.',
     },
     'Animedle': {
-      challenge: 'Anime fans had no daily guessing game tailored to their references and characters.',
-      impact: 'A multi-mode Wordle-style game with progressive hints, daily challenges, streaks and full statistics.',
+      challenge: 'Anime fans had no daily guessing game that covered both series and characters, with progressive hints.',
+      impact: 'A daily guessing platform in production (animedle.lat) with 6 modes: Classic (anime and character, color-proximity table), Emoji (4 revealable emojis), Opening (audio clips), Pixel (progressively de-pixelated image), Silhouette, and VS multiplayer in real time (rooms). MERN stack, ES/EN/PT, sakura-petal Easter egg, in-app updates panel, sharing DB with AnimeLink.',
     },
     'Deb8': {
       challenge: 'Online arguments become chaotic and aggressive, so a formal debating space was needed.',
@@ -312,8 +312,8 @@ export const projectMeta = {
       impact: 'Un clone diario de Connections en producción (animelink.lat) con grilla 3x3, sistema de cercanía 2/3, una pista por ronda, 4 esferas del dragón, modos anime y personaje, archivo para rejugar cualquier día, estadísticas y rachas. Monorepo MERN completo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, desplegado en Vercel + Render, compartiendo base de datos con Animedle.',
     },
     'Animedle': {
-      challenge: 'Los fanáticos del anime no tenían un juego de adivinanzas diario adaptado a sus referencias y personajes.',
-      impact: 'Un juego estilo Wordle con múltiples modos, pistas progresivas, desafío diario, rachas y estadísticas completas.',
+      challenge: 'Los fanáticos del anime no tenían un juego de adivinanzas diario que cubriera tanto series como personajes, con pistas progresivas.',
+      impact: 'Una plataforma de adivinanzas diaria en producción (animedle.lat) con 6 modos: Classic (anime y personaje, tabla de colores de proximidad), Emoji (4 emojis revelables), Opening (fragmentos de audio), Pixel (imagen que se despixela), Silueta y VS multijugador en tiempo real (salas). Stack MERN, ES/EN/PT, Easter egg de pétalos de sakura, panel de novedades in-app, compartiendo base de datos con AnimeLink.',
     },
     'Deb8': {
       challenge: 'Los debates online se vuelven caóticos y agresivos, así que hacía falta un espacio formal de discusión.',

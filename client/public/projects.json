@@ -45,8 +45,8 @@
         "/img/screens/animedle-screens/screen4.png",
         "/img/screens/animedle-screens/screen5.png"
       ],
-      "challenge": "Anime fans had no daily guessing game tailored to their references and characters.",
-      "impact": "A multi-mode Wordle-style game with progressive hints, daily challenges, streaks and full statistics."
+      "challenge": "Anime fans had no daily guessing game that covered both series and characters, with progressive hints.",
+      "impact": "A daily guessing platform in production (animedle.lat) with 6 modes: Classic (anime and character, color-proximity table), Emoji (4 revealable emojis), Opening (audio clips), Pixel (progressively de-pixelated image), Silhouette, and VS multiplayer in real time (rooms). MERN stack, ES/EN/PT, sakura-petal Easter egg, in-app updates panel, sharing DB with AnimeLink."
     },
     {
       "id": 3,
