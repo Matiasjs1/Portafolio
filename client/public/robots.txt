@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://matiasjs1.github.io/Portafolio/sitemap.xml
