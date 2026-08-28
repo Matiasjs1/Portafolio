@@ -26,12 +26,12 @@ function ProjectModal({ project, onClose }) {
           <h3>{project.name}</h3>
           <div className="header-actions">
             {project.repository && (
-              <a href={project.repository} target="_blank" rel="noreferrer" aria-label="Repository" className="icon-link">
+              <a href={project.repository} target="_blank" rel="noreferrer" aria-label="Repository" title="Repository" className="icon-link">
                 <FiGithub size={20} />
               </a>
             )}
             {project.url && (
-              <a href={project.url} target="_blank" rel="noreferrer" aria-label="View live demo" className="icon-link">
+              <a href={project.url} target="_blank" rel="noreferrer" aria-label="Live demo" title="Live demo" className="icon-link">
                 <ExternalLink size={20} />
               </a>
             )}
@@ -58,15 +58,6 @@ function ProjectModal({ project, onClose }) {
                 {(project.skills || []).map((skill) => (
                   <span key={skill}>{skill}</span>
                 ))}
-              </div>
-            </div>
-          )}
-          {(project.repository || project.url) && (
-            <div className="modal-section">
-              <h4>Links</h4>
-              <div className="modal-tags">
-                {project.repository && <a className="modal-link" href={project.repository} target="_blank" rel="noreferrer"><FiGithub size={14} /> Repository</a>}
-                {project.url && <a className="modal-link" href={project.url} target="_blank" rel="noreferrer"><ExternalLink size={14} /> Live demo</a>}
               </div>
             </div>
           )}
