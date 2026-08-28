@@ -66,19 +66,26 @@
       ]
     },
     {
-      "id": 8,
-      "name": "First Chatbot",
+      "id": 5,
+      "name": "Paintball",
       "skills": [
-        "Python",
-        "Streamlit",
-        "LangChain",
-        "OpenAI"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
       ],
-      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
-      "repository": "https://github.com/Matiasjs1/first-chatbot",
-      "url": "https://first-chatbot-mjs.streamlit.app/",
+      "description": "Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.",
+      "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
+      "url": "",
       "video": "",
-      "images": []
+      "images": [
+        "/img/screens/paintball-screens/screen1.png",
+        "/img/screens/paintball-screens/screen2.png",
+        "/img/screens/paintball-screens/screen3.png",
+        "/img/screens/paintball-screens/screen4.png",
+        "/img/screens/paintball-screens/screen5.png"
+      ]
     },
     {
       "id": 7,
@@ -103,43 +110,6 @@
       ]
     },
     {
-      "id": 9,
-      "name": "EthereumCodes",
-      "skills": [
-        "Solidity",
-        "Hardhat",
-        "Ethers.js",
-        "OpenZeppelin"
-      ],
-      "description": "Smart contract practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs, access control patterns. Certified by ETH KIPU + CABA Technical Schools.",
-      "repository": "https://github.com/Matiasjs1/EthereumCodes",
-      "url": "",
-      "video": "",
-      "images": []
-    },
-    {
-      "id": 5,
-      "name": "Paintball",
-      "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "MySQL"
-      ],
-      "description": "Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.",
-      "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
-      "url": "",
-      "video": "",
-      "images": [
-        "/img/screens/paintball-screens/screen1.png",
-        "/img/screens/paintball-screens/screen2.png",
-        "/img/screens/paintball-screens/screen3.png",
-        "/img/screens/paintball-screens/screen4.png",
-        "/img/screens/paintball-screens/screen5.png"
-      ]
-    },
-    {
       "id": 6,
       "name": "MyFit",
       "skills": [
@@ -159,6 +129,38 @@
         "/img/screens/myfit-screens/screen3.png",
         "/img/screens/myfit-screens/screen4.png",
         "/img/screens/myfit-screens/screen5.png"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "First Chatbot",
+      "skills": [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "OpenAI"
+      ],
+      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
+      "repository": "https://github.com/Matiasjs1/first-chatbot",
+      "url": "https://first-chatbot-mjs.streamlit.app/",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": 9,
+      "name": "EthereumCodes",
+      "skills": [
+        "Solidity",
+        "Hardhat",
+        "Ethers.js",
+        "OpenZeppelin"
+      ],
+      "description": "Smart contracts practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs and access-control patterns. Certified 50-hour professional practicum by ETH KIPU and CABA Technical Schools.",
+      "repository": "https://github.com/Matiasjs1/EthereumCodes",
+      "url": "",
+      "video": "",
+      "images": [
+        "/img/screens/ethereumcodes-screens/screen1.svg"
       ]
     },
     {

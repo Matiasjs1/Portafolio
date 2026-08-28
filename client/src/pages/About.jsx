@@ -46,18 +46,6 @@ function About() {
         ))}
       </div>
 
-      <h2><span className="blue-text">{t.about.educationTitle.split(' ')[0]}</span> {t.about.educationTitle.split(' ').slice(1).join(' ')}</h2>
-      <div className="timeline">
-        {t.about.education.map((e) => (
-          <div className="timeline-card" key={e.title}>
-            <h3>{e.title}</h3>
-            <p className="timeline-org">{e.org}</p>
-            <p className="timeline-dates">{e.dates}</p>
-            {e.note && <p className="timeline-note">{e.note}</p>}
-          </div>
-        ))}
-      </div>
-
       <h2><span className="blue-text">{t.about.experienceTitle.split(' ')[0]}</span> {t.about.experienceTitle.split(' ').slice(1).join(' ')}</h2>
       <div className="timeline">
         {t.about.experience.map((x) => (
@@ -68,6 +56,18 @@ function About() {
             <ul className="timeline-bullets">
               {x.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>
+          </div>
+        ))}
+      </div>
+
+      <h2><span className="blue-text">{t.about.educationTitle.split(' ')[0]}</span> {t.about.educationTitle.split(' ').slice(1).join(' ')}</h2>
+      <div className="timeline">
+        {t.about.education.map((e) => (
+          <div className="timeline-card" key={e.title}>
+            <h3>{e.title}</h3>
+            <p className="timeline-org">{e.org}</p>
+            <p className="timeline-dates">{e.dates}</p>
+            {e.note && <p className="timeline-note">{e.note}</p>}
           </div>
         ))}
       </div>
