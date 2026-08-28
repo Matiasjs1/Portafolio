@@ -2,95 +2,183 @@
   "projects": [
     {
       "id": 1,
-      "name": "Plant It",
-      "skills": ["React", "MongoDB", "Node.js", "Express","Arduino"],
-      "description": "A sustainability-focused project combining plant monitoring and a web application to improve plant care management.",
-      "repository": "https://github.com/felig76/Plant-It",
-      "url": "https://plant-it-1-kb8j.onrender.com/",
-      "video": "https://www.youtube.com/embed/MwUX9WhQYhI?si=Zk5Od4qNpNr31HjI",
+      "name": "Animelink",
+      "skills": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js",
+        "Vite"
+      ],
+      "description": "Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.",
+      "repository": "https://github.com/Matiasjs1/animelink",
+      "url": "https://www.animelink.lat",
+      "video": "",
       "images": [
-        ""
+        "/img/screens/animelink-screens/screen1.png",
+        "/img/screens/animelink-screens/screen2.png",
+        "/img/screens/animelink-screens/screen3.png",
+        "/img/screens/animelink-screens/screen4.png",
+        "/img/screens/animelink-screens/screen5.png"
       ]
     },
     {
       "id": 2,
-      "name": "Deb8",
-      "skills": ["React", "MongoDB", "Node.js", "Express"],
-      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.",
-      "repository": "https://github.com/Matiasjs1/deb8",
-      "url": "https://deb8-i2su.onrender.com/",
-      "video": "https://www.youtube.com/embed/Zx_KFn8JMaY?si=QQaVQBEq2bo8y0na",
+      "name": "Animedle",
+      "skills": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js",
+        "Vite"
+      ],
+      "description": "Wordle-style anime guessing game with multiple modes. Progressive hints, daily challenge, statistics, streaks. Full-stack with shared MongoDB collections (anime/character data).",
+      "repository": "https://github.com/Matiasjs1/Animedle1",
+      "url": "https://www.animedle.lat",
+      "video": "",
       "images": [
-        "../img/screens/deb8-screens/screen1.png",
-        "../img/screens/deb8-screens/screen2.png",
-        "../img/screens/deb8-screens/screen3.png",
-        "../img/screens/deb8-screens/screen4.png",
-        "../img/screens/deb8-screens/screen5.png"
+        "/img/screens/animedle-screens/screen1.png",
+        "/img/screens/animedle-screens/screen2.png",
+        "/img/screens/animedle-screens/screen3.png",
+        "/img/screens/animedle-screens/screen4.png",
+        "/img/screens/animedle-screens/screen5.png"
       ]
     },
     {
       "id": 3,
-      "name": "JBrain",
-      "skills": ["Java","MySQL"],
-      "description": "An educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
-      "repository": "https://github.com/Matiasjs1/JBrain",
+      "name": "Deb8",
+      "skills": [
+        "React",
+        "MongoDB",
+        "Node.js",
+        "Express"
+      ],
+      "description": "Online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface.",
+      "repository": "https://github.com/Matiasjs1/deb8",
       "url": "",
-      "video": "",
+      "video": "https://www.youtube.com/embed/Zx_KFn8JMaY?si=QQaVQBEq2bo8y0na",
       "images": [
-        "../img/screens/jbrain-screens/screen1.png",
-        "../img/screens/jbrain-screens/screen2.png",
-        "../img/screens/jbrain-screens/screen3.png",
-        "../img/screens/jbrain-screens/screen4.png"
+        "/img/screens/deb8-screens/screen1.png",
+        "/img/screens/deb8-screens/screen2.png",
+        "/img/screens/deb8-screens/screen3.png",
+        "/img/screens/deb8-screens/screen4.png",
+        "/img/screens/deb8-screens/screen5.png"
       ]
     },
     {
       "id": 4,
-      "name": "Paintball",
-      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
-      "description": "An online reservation system with real-time scheduling, duplicate booking prevention, online payment support, and a user-friendly interface design.",
-      "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
-      "url":"",
+      "name": "JBrain",
+      "skills": [
+        "Java",
+        "MySQL",
+        "Swing"
+      ],
+      "description": "Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
+      "repository": "https://github.com/Matiasjs1/JBrain",
+      "url": "",
       "video": "",
       "images": [
-        "../img/screens/paintball-screens/screen1.png",
-        "../img/screens/paintball-screens/screen2.png",
-        "../img/screens/paintball-screens/screen3.png",
-        "../img/screens/paintball-screens/screen4.png",
-        "../img/screens/paintball-screens/screen5.png"
+        "/img/screens/jbrain-screens/screen1.png",
+        "/img/screens/jbrain-screens/screen2.png",
+        "/img/screens/jbrain-screens/screen3.png",
+        "/img/screens/jbrain-screens/screen4.png"
       ]
     },
     {
       "id": 5,
-      "name": "MyFit",
-      "skills": ["HTML", "CSS", "JavaScript", "PHP"],
-      "description": "A gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
-      "repository": "https://github.com/Matiasjs1/MyFit",
-            "url":"",
+      "name": "Paintball",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "description": "Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.",
+      "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
+      "url": "",
       "video": "",
       "images": [
-        "../img/screens/myfit-screens/screen1.png",
-        "../img/screens/myfit-screens/screen2.png",
-        "../img/screens/myfit-screens/screen3.png",
-        "../img/screens/myfit-screens/screen4.png",
-        "../img/screens/myfit-screens/screen5.png"
+        "/img/screens/paintball-screens/screen1.png",
+        "/img/screens/paintball-screens/screen2.png",
+        "/img/screens/paintball-screens/screen3.png",
+        "/img/screens/paintball-screens/screen4.png",
+        "/img/screens/paintball-screens/screen5.png"
       ]
     },
     {
       "id": 6,
-      "name": "Animedle",
-      "skills": ["HTML", "CSS", "JavaScript"],
-      "description": "An interactive web application focused on clean UI, frontend logic, and engaging user interaction through a progressive guessing mechanic.",
-      "repository": "https://github.com/Matiasjs1/Animedle",
-            "url":"",
+      "name": "MyFit",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "description": "Gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
+      "repository": "https://github.com/Matiasjs1/MyFit",
+      "url": "",
       "video": "",
       "images": [
-        "../img/screens/animedle-screens/screen1.png",
-        "../img/screens/animedle-screens/screen2.png",
-        "../img/screens/animedle-screens/screen3.png",
-        "../img/screens/animedle-screens/screen4.png",
-        "../img/screens/animedle-screens/screen5.png"
+        "/img/screens/myfit-screens/screen1.png",
+        "/img/screens/myfit-screens/screen2.png",
+        "/img/screens/myfit-screens/screen3.png",
+        "/img/screens/myfit-screens/screen4.png",
+        "/img/screens/myfit-screens/screen5.png"
       ]
+    },
+    {
+      "id": 7,
+      "name": "MAYCO",
+      "skills": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "description": "Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.",
+      "repository": "https://github.com/Matiasjs1/MAYCO",
+      "url": "",
+      "video": "",
+      "images": [
+        "/img/screens/mayco-screens/screen1.png",
+        "/img/screens/mayco-screens/screen2.png",
+        "/img/screens/mayco-screens/screen3.png",
+        "/img/screens/mayco-screens/screen4.png",
+        "/img/screens/mayco-screens/screen5.png"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "First Chatbot",
+      "skills": [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "OpenAI"
+      ],
+      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
+      "repository": "https://github.com/Matiasjs1/first-chatbot",
+      "url": "https://first-chatbot-mjs.streamlit.app/",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": 9,
+      "name": "EthereumCodes",
+      "skills": [
+        "Solidity",
+        "Hardhat",
+        "Ethers.js",
+        "OpenZeppelin"
+      ],
+      "description": "Smart contract practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs, access control patterns. Certified by ETH KIPU + CABA Technical Schools.",
+      "repository": "https://github.com/Matiasjs1/EthereumCodes",
+      "url": "",
+      "video": "",
+      "images": []
     }
-    
   ]
 }

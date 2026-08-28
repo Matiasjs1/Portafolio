@@ -11,7 +11,7 @@ function Navbar() {
     <nav>
       <NavLink to="/">
       <div className={isHome ? 'hidden' : 'flex'} id="logo">
-        <img src="/img/profile.jpg" alt="Profile picture" id="profile1" />
+        <img src="/img/profile.png" alt="Profile picture" id="profile1" />
         <h1 style={{fontSize: '20px'}}>Matias Sesto</h1>
       </div>
       </NavLink>

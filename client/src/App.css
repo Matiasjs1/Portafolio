@@ -652,3 +652,136 @@ html[data-theme="light"] nav ul li:hover .nav-icon{
     align-items: center;
     gap: 10px;
 }
+
+.demo-button{
+    filter: invert(0) brightness(3);
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+}
+
+html [data-theme="light"] .demo-button{
+    filter: brightness(0) saturate(100%) invert(10%) sepia(92%) saturate(2680%) hue-rotate(215deg) brightness(10%) contrast(101%);
+}
+
+/* Timeline (educación / experiencia) */
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 30px;
+}
+.timeline-card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+.timeline-card h3{
+    font-size: 18px;
+}
+.timeline-org{
+    color: var(--text-soft);
+    margin-top: 2px;
+}
+.timeline-dates{
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.timeline-note{
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 6px;
+}
+.timeline-bullets{
+    margin-top: 8px;
+    padding-left: 20px;
+    color: var(--text-soft);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Cursos certificados */
+#courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+.course-chip{
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: var(--text-soft);
+}
+
+/* Contact */
+#contact-lead{
+    color: var(--text-soft);
+    margin-top: 10px;
+    max-width: 520px;
+    text-align: center;
+}
+#contact-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 28px;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0 6px 16px var(--shadow);
+}
+.contact-card h3{
+    font-size: 16px;
+}
+.contact-card p{
+    font-size: 14px;
+    color: var(--accent);
+}
+#contact-location{
+    margin-top: 24px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+@media screen and (max-width: 768px){
+    #contact-cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 10px;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 14px;
+}
+footer .social-links a img{
+    width: 26px;
+    margin-top: 0;
+}

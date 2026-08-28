@@ -1,14 +1,14 @@
 function downloadCV() {
   const link = document.createElement('a')
   link.href = '/pdf/Curriculum Vitae - Matias Sesto.pdf'
-  link.download = 'CV - Matias Sesto.pdf'
+  link.download = 'CV - Matias Sesto - 2025.pdf'
   link.click()
 }
 
 function Home() {
   return (
     <section id="home" className="flex">
-      <img src="/img/profile.jpg" alt="Profile picture" id="profile2" />
+      <img src="/img/profile.png" alt="Profile picture" id="profile2" />
       <div id="information">
         <h1>Matias Sesto</h1>
         <h2 className="blue-text">Full Stack Developer</h2>

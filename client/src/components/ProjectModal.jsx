@@ -1,15 +1,16 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Carousel from './Caroussel'
 function ProjectModal({ project, onClose }) {
-  if (!project) return null
-
   useEffect(() => {
+    if (!project) return
     const onKeyDown = (e) => {
       if (e.key === 'Escape') onClose()
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [onClose])
+  }, [project, onClose])
+
+  if (!project) return null
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
@@ -19,12 +20,12 @@ function ProjectModal({ project, onClose }) {
           <h3>{project.name}</h3>
           {project.repository && (
             <a href={project.repository} target="_blank" rel="noreferrer">
-              <img src="../img/github.png" alt="GitHub" className="modal-github" />
+              <img src="../img/github.png" alt="GitHub" className="modal-github zoom" />
             </a>
           )}
           {project.url && (
             <a href={project.url} target="_blank" rel="noreferrer">
-              <button>View demo</button>
+              <img src="../img/demo.png" alt="Demo" className="demo-button zoom" />
             </a>
           )}
           </div>
