@@ -38,7 +38,7 @@ function App() {
   }, [t])
 
   return (
-    <>
+    <div className="app">
       <div className="home-glow" aria-hidden="true"></div>
       <Navbar />
       <main>
@@ -54,7 +54,7 @@ function App() {
       <footer>
         <p>© {year} {t.home.name} · {t.footer.line}</p>
       </footer>
-    </>
+    </div>
   );
 }
 

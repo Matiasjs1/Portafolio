@@ -70,6 +70,18 @@ body {
   transition: background 0.3s var(--ease), color 0.3s var(--ease);
 }
 
+/* Sticky footer: la app ocupa al menos la altura de la ventana;
+   main crece y empuja el footer al fondo (sin espacio extraño debajo). */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app main {
+  flex: 1;
+}
+
 .home-glow {
   position: fixed;
   inset: 0;
