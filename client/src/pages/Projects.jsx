@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { ArrowUpRight } from 'lucide-react'
 import ProjectModal from '../components/ProjectModal'
 
 function Projects() {
@@ -55,6 +56,17 @@ function Projects() {
               </div>
               <div className="project-actions">
                 <button className="details" onClick={() => setSelectedProject(proyecto)}>Details</button>
+                {proyecto.url && (
+                  <a
+                    className="details live"
+                    href={proyecto.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo
+                    <ArrowUpRight size={14} />
+                  </a>
+                )}
               </div>
             </article>
           )

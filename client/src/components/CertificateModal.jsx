@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Lock, X, Download, ExternalLink } from 'lucide-react'
 
 function CertificateModal({ course, onClose }) {
   const [status, setStatus] = useState('loading')
@@ -55,17 +56,14 @@ function CertificateModal({ course, onClose }) {
               {extended ? ` · ${extended}` : ''}
             </p>
           </div>
-          <button className="modal-close" onClick={onClose} aria-label="Close">×</button>
+          <button className="modal-close" onClick={onClose} aria-label="Close"><X size={18} /></button>
         </div>
         <div className="modal-body">
           {status === 'loading' && <p className="cert-status">Loading certificate…</p>}
 
           {status === 'missing' && (
             <div className="cert-empty">
-              <svg viewBox="0 0 24 24" width="54" height="54" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/>
-                <circle cx="12" cy="15" r="2"/>
-              </svg>
+              <Lock size={54} stroke="var(--accent)" aria-hidden="true" />
               <h4>Certificate coming soon</h4>
               <p>I&apos;m uploading this certificate. Check back shortly to view or download it.</p>
               {course.cert && <code className="cert-path">{course.cert}</code>}
@@ -80,8 +78,14 @@ function CertificateModal({ course, onClose }) {
                 <img className="cert-preview cert-preview-img" src={course.cert} alt={`${course.title} certificate`} />
               )}
               <div className="cert-actions">
-                <a className="btn-primary" href={course.cert} download={filename}>Download</a>
-                <a className="btn-ghost" href={course.cert} target="_blank" rel="noreferrer">Open in new tab</a>
+                <a className="btn-primary" href={course.cert} download={filename}>
+                  <Download size={18} />
+                  Download
+                </a>
+                <a className="btn-ghost" href={course.cert} target="_blank" rel="noreferrer">
+                  Open in new tab
+                  <ExternalLink size={18} />
+                </a>
               </div>
             </>
           )}

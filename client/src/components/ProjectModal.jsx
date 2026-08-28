@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import { ExternalLink, X } from 'lucide-react'
+import { FiGithub } from 'react-icons/fi'
 import Carousel from './Caroussel'
 
 function ProjectModal({ project, onClose }) {
@@ -24,16 +26,16 @@ function ProjectModal({ project, onClose }) {
           <h3>{project.name}</h3>
           <div className="header-actions">
             {project.repository && (
-              <a href={project.repository} target="_blank" rel="noreferrer" aria-label="Repository">
-                <img src="../img/github.png" alt="GitHub" className="modal-github zoom" />
+              <a href={project.repository} target="_blank" rel="noreferrer" aria-label="Repository" className="icon-link">
+                <FiGithub size={20} />
               </a>
             )}
             {project.url && (
-              <a href={project.url} target="_blank" rel="noreferrer" aria-label="View live demo">
-                <img src="../img/demo.png" alt="Demo" className="demo-button zoom" />
+              <a href={project.url} target="_blank" rel="noreferrer" aria-label="View live demo" className="icon-link">
+                <ExternalLink size={20} />
               </a>
             )}
-            <button className="modal-close" onClick={onClose} aria-label="Close">×</button>
+            <button className="modal-close" onClick={onClose} aria-label="Close"><X size={18} /></button>
           </div>
         </div>
         <div className="modal-body">
@@ -63,8 +65,8 @@ function ProjectModal({ project, onClose }) {
             <div className="modal-section">
               <h4>Links</h4>
               <div className="modal-tags">
-                {project.repository && <a className="modal-link" href={project.repository} target="_blank" rel="noreferrer">Repository</a>}
-                {project.url && <a className="modal-link" href={project.url} target="_blank" rel="noreferrer">Live demo</a>}
+                {project.repository && <a className="modal-link" href={project.repository} target="_blank" rel="noreferrer"><FiGithub size={14} /> Repository</a>}
+                {project.url && <a className="modal-link" href={project.url} target="_blank" rel="noreferrer"><ExternalLink size={14} /> Live demo</a>}
               </div>
             </div>
           )}

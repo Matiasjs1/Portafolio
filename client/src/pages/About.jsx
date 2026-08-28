@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { GraduationCap } from 'lucide-react'
 import CertificateModal from '../components/CertificateModal'
 
 const education = [
@@ -116,7 +117,6 @@ function About() {
       <h2>ABOUT <span className="blue-text">ME</span></h2>
 
       <div className="about-intro">
-        <img src="/img/profile.png" alt="Matias Sesto" className="about-avatar" />
         <div>
           <p className="about-lead">
             Computer Technician currently studying Information Systems Engineering at UTN FRBA.
@@ -186,10 +186,7 @@ function About() {
       <div className="courses-grid">
         {courses.map((c) => (
           <button className="course-card zoom" key={c.title} onClick={() => setCourse(c)}>
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="var(--accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/>
-              <circle cx="12" cy="15" r="2"/>
-            </svg>
+            <GraduationCap size={26} stroke="var(--accent)" />
             <span className="course-card-title">{c.title}</span>
             <span className="course-card-meta">{c.provider}{c.year ? ` · ${c.year}` : ''}</span>
           </button>

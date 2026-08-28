@@ -66,23 +66,56 @@
       ]
     },
     {
-      "id": 4,
-      "name": "JBrain",
+      "id": 8,
+      "name": "First Chatbot",
       "skills": [
-        "Java",
-        "MySQL",
-        "Swing"
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "OpenAI"
       ],
-      "description": "Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
-      "repository": "https://github.com/Matiasjs1/JBrain",
+      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
+      "repository": "https://github.com/Matiasjs1/first-chatbot",
+      "url": "https://first-chatbot-mjs.streamlit.app/",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": 7,
+      "name": "MAYCO",
+      "skills": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "description": "Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.",
+      "repository": "https://github.com/Matiasjs1/MAYCO",
       "url": "",
       "video": "",
       "images": [
-        "/img/screens/jbrain-screens/screen1.png",
-        "/img/screens/jbrain-screens/screen2.png",
-        "/img/screens/jbrain-screens/screen3.png",
-        "/img/screens/jbrain-screens/screen4.png"
+        "/img/screens/mayco-screens/screen1.png",
+        "/img/screens/mayco-screens/screen2.png",
+        "/img/screens/mayco-screens/screen3.png",
+        "/img/screens/mayco-screens/screen4.png",
+        "/img/screens/mayco-screens/screen5.png"
       ]
+    },
+    {
+      "id": 9,
+      "name": "EthereumCodes",
+      "skills": [
+        "Solidity",
+        "Hardhat",
+        "Ethers.js",
+        "OpenZeppelin"
+      ],
+      "description": "Smart contract practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs, access control patterns. Certified by ETH KIPU + CABA Technical Schools.",
+      "repository": "https://github.com/Matiasjs1/EthereumCodes",
+      "url": "",
+      "video": "",
+      "images": []
     },
     {
       "id": 5,
@@ -129,56 +162,23 @@
       ]
     },
     {
-      "id": 7,
-      "name": "MAYCO",
+      "id": 4,
+      "name": "JBrain",
       "skills": [
-        "PHP",
+        "Java",
         "MySQL",
-        "JavaScript",
-        "HTML",
-        "CSS"
+        "Swing"
       ],
-      "description": "Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.",
-      "repository": "https://github.com/Matiasjs1/MAYCO",
+      "description": "Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
+      "repository": "https://github.com/Matiasjs1/JBrain",
       "url": "",
       "video": "",
       "images": [
-        "/img/screens/mayco-screens/screen1.png",
-        "/img/screens/mayco-screens/screen2.png",
-        "/img/screens/mayco-screens/screen3.png",
-        "/img/screens/mayco-screens/screen4.png",
-        "/img/screens/mayco-screens/screen5.png"
+        "/img/screens/jbrain-screens/screen1.png",
+        "/img/screens/jbrain-screens/screen2.png",
+        "/img/screens/jbrain-screens/screen3.png",
+        "/img/screens/jbrain-screens/screen4.png"
       ]
-    },
-    {
-      "id": 8,
-      "name": "First Chatbot",
-      "skills": [
-        "Python",
-        "Streamlit",
-        "LangChain",
-        "OpenAI"
-      ],
-      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
-      "repository": "https://github.com/Matiasjs1/first-chatbot",
-      "url": "https://first-chatbot-mjs.streamlit.app/",
-      "video": "",
-      "images": []
-    },
-    {
-      "id": 9,
-      "name": "EthereumCodes",
-      "skills": [
-        "Solidity",
-        "Hardhat",
-        "Ethers.js",
-        "OpenZeppelin"
-      ],
-      "description": "Smart contract practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs, access control patterns. Certified by ETH KIPU + CABA Technical Schools.",
-      "repository": "https://github.com/Matiasjs1/EthereumCodes",
-      "url": "",
-      "video": "",
-      "images": []
     }
   ]
 }

@@ -292,6 +292,10 @@ nav ul li a svg {
 }
 
 #cv, .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   border: 0;
   border-radius: var(--radius-pill);
   padding: 13px 28px;
@@ -314,6 +318,7 @@ nav ul li a svg {
 .btn-ghost {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
@@ -363,11 +368,9 @@ nav ul li a svg {
 }
 #about > h2:first-of-type { margin-top: 0; }
 
-/* intro: avatar + lead + value chips */
+/* intro: lead + value chips */
 .about-intro {
   display: flex;
-  align-items: center;
-  gap: 28px;
   width: 100%;
   max-width: 860px;
   background: var(--surface);
@@ -375,16 +378,6 @@ nav ul li a svg {
   border-radius: var(--radius-lg);
   padding: 32px 36px;
   box-shadow: 0 6px 20px var(--shadow);
-}
-
-.about-avatar {
-  width: 120px;
-  height: 120px;
-  flex-shrink: 0;
-  border-radius: var(--radius-pill);
-  object-fit: cover;
-  padding: 4px;
-  background: conic-gradient(from 180deg, var(--accent), var(--accent-2), var(--accent));
 }
 
 .about-lead {
@@ -698,13 +691,19 @@ nav ul li a svg {
 }
 
 .project-actions {
+  display: flex;
+  gap: 10px;
   margin-top: auto;
   padding: 14px 20px 20px;
   border-top: 1px solid var(--line);
 }
 
 .details {
-  width: 100%;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   border: 0;
   border-radius: var(--radius-pill);
   padding: 11px;
@@ -714,10 +713,18 @@ nav ul li a svg {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.2s, color 0.2s;
 }
 
 .details:hover { background: var(--accent); color: #fff; }
+
+.details.live {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.details.live:hover { background: var(--accent); color: #fff; }
 
 /* ============ MODAL ============ */
 .modal-backdrop {
@@ -771,30 +778,36 @@ nav ul li a svg {
 .modal-header .header-actions a { display: inline-flex; }
 @media (max-width: 640px) { .modal-header { flex-direction: column; align-items: flex-start; gap: 12px; } }
 
-.modal-github, .demo-button {
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-}
-
-.demo-button {
-  filter: none;
-}
-
 .modal-close {
   background: var(--surface-2);
   border: 1px solid var(--line);
   border-radius: var(--radius-pill);
   color: var(--text);
-  width: 34px;
-  height: 34px;
-  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   line-height: 1;
   transition: background 0.2s, color 0.2s;
 }
 
 .modal-close:hover { background: var(--accent); color: #fff; }
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  color: var(--text-soft);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.icon-link:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 
 .modal-body { padding: 22px; max-height: 70vh; overflow: auto; }
 
@@ -806,7 +819,14 @@ nav ul li a svg {
 .modal-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .modal-tags span { font-size: 13px; font-weight: 500; color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-pill); padding: 5px 12px; }
 
-.modal-link { color: var(--accent); text-decoration: none; font-weight: 500; }
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
 .modal-link:hover { text-decoration: underline; }
 
 .carousel { position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: var(--radius-md); background: var(--surface-2); }
