@@ -742,11 +742,12 @@ nav ul li a svg {
 
 .project-tags span {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--accent);
   background: var(--accent-soft);
+  border: 1px solid var(--accent-soft);
   border-radius: var(--radius-pill);
-  padding: 4px 10px;
+  padding: 5px 11px;
 }
 
 .project-actions {
@@ -764,26 +765,34 @@ nav ul li a svg {
   justify-content: center;
   gap: 6px;
   border: 0;
-  border-radius: var(--radius-pill);
-  padding: 11px;
-  color: var(--text);
-  background: var(--surface-2);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  color: #fff;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
   font-family: var(--font, 'Poppins');
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 4px 14px var(--ring);
+  transition: transform 0.2s var(--ease), filter 0.2s;
 }
 
-.details:hover { background: var(--accent); color: #fff; }
+.details:hover { transform: translateY(-2px); filter: brightness(1.06); }
 
 .details.live {
   color: var(--accent);
-  background: var(--accent-soft);
+  background: transparent;
+  border: 2px solid var(--accent);
+  box-shadow: none;
+  font-weight: 600;
 }
 
-.details.live:hover { background: var(--accent); color: #fff; }
+.details.live:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
 
 /* ============ MODAL ============ */
 .modal-backdrop {
