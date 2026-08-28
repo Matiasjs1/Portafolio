@@ -92,8 +92,8 @@
         "/img/screens/paintball-screens/screen4.png",
         "/img/screens/paintball-screens/screen5.png"
       ],
-      "challenge": "A paintball field needed real-time booking without double reservations and manual admin.",
-      "impact": "A reservation platform with real-time scheduling, duplicate-booking prevention, online payments and an admin panel."
+      "challenge": "A real paintball field (running since 2010) booked its 3 courts by phone, causing double bookings and chaos on weekends.",
+      "impact": "A reservation platform with user accounts, per-court scheduling (date/time), pricing by capacity, and online payment — used in place of manual phone booking."
     },
     {
       "id": 7,
@@ -116,8 +116,8 @@
         "/img/screens/mayco-screens/screen4.png",
         "/img/screens/mayco-screens/screen5.png"
       ],
-      "challenge": "A shipping company had no digital way to coordinate drivers, deliveries and returns.",
-      "impact": "A logistics management system for driver management, delivery tracking, returns and dispatch workflows (PHP + MySQL)."
+      "challenge": "A shipping company managed drivers, deliveries and returns on paper, with no central system.",
+      "impact": "A full CRUD logistics app: driver registry (id, DNI, age, salary), delivery dispatch, shipment tracking and returns, with role-based PHP pages."
     },
     {
       "id": 6,
@@ -140,8 +140,8 @@
         "/img/screens/myfit-screens/screen4.png",
         "/img/screens/myfit-screens/screen5.png"
       ],
-      "challenge": "Managing gym bars and accessories was error-prone without live availability.",
-      "impact": "A gym equipment system with real-time availability tracking and a simple admin interface."
+      "challenge": "Tracking gym equipment inventory (bars, kits) and materials was error-prone with spreadsheets.",
+      "impact": "An inventory app to build equipment kits, track stock and material inputs, and manage manufacturing of new gear."
     },
     {
       "id": 8,

@@ -282,16 +282,16 @@ export const projectMeta = {
       impact: 'A web app for text and voice debates between 2-4 people, with moderation, unanimous expulsion voting, sanctions and personal stats (proyecto integrador 2025).',
     },
     'Paintball': {
-      challenge: 'A paintball field needed real-time booking without double reservations and manual admin.',
-      impact: 'A reservation platform with real-time scheduling, duplicate-booking prevention, online payments and an admin panel.',
+      challenge: 'A real paintball field (running since 2010) booked its 3 courts by phone, causing double bookings and chaos on weekends.',
+      impact: 'A reservation platform with user accounts, per-court scheduling (date/time), pricing by capacity, and online payment — used in place of manual phone booking.',
     },
     'MAYCO': {
-      challenge: 'A shipping company had no digital way to coordinate drivers, deliveries and returns.',
-      impact: 'A logistics management system for driver management, delivery tracking, returns and dispatch workflows (PHP + MySQL).',
+      challenge: 'A shipping company managed drivers, deliveries and returns on paper, with no central system.',
+      impact: 'A full CRUD logistics app: driver registry (id, DNI, age, salary), delivery dispatch, shipment tracking and returns, with role-based PHP pages.',
     },
     'MyFit': {
-      challenge: 'Managing gym bars and accessories was error-prone without live availability.',
-      impact: 'A gym equipment system with real-time availability tracking and a simple admin interface.',
+      challenge: 'Tracking gym equipment inventory (bars, kits) and materials was error-prone with spreadsheets.',
+      impact: 'An inventory app to build equipment kits, track stock and material inputs, and manage manufacturing of new gear.',
     },
     'First Chatbot': {
       challenge: 'Making AI document Q&A accessible without a heavy setup.',
@@ -320,16 +320,16 @@ export const projectMeta = {
       impact: 'Una app web de debates por texto y voz entre 2 y 4 personas, con moderación, votación unánime para expulsar, sanciones y estadísticas personales (proyecto integrador 2025).',
     },
     'Paintball': {
-      challenge: 'Una cancha de paintball necesitaba reservas en tiempo real sin reservas duplicadas ni administración manual.',
-      impact: 'Una plataforma de reservas con programación en tiempo real, prevención de duplicados, pagos online y panel de administración.',
+      challenge: 'Un campo de paintball real (desde 2010) reservaba sus 3 canchas por teléfono, causando reservas duplicadas y caos los fines de semana.',
+      impact: 'Una plataforma de reservas con cuentas de usuario, programación por cancha (fecha/hora), precios por capacidad y pago online — en lugar de la reserva telefónica manual.',
     },
     'MAYCO': {
-      challenge: 'Una empresa de envíos no tenía forma digital de coordinar conductores, entregas y devoluciones.',
-      impact: 'Un sistema de gestión logística para conductores, seguimiento de entregas, devoluciones y flujos de despacho (PHP + MySQL).',
+      challenge: 'Una empresa de envíos manejaba conductores, entregas y devoluciones en papel, sin un sistema central.',
+      impact: 'Una app de logística con CRUD completo: registro de conductores (id, DNI, edad, sueldo), despacho de envíos, seguimiento y devoluciones, con páginas PHP por rol.',
     },
     'MyFit': {
-      challenge: 'Administrar las barras y accesorios del gimnasio era propenso a errores sin disponibilidad en vivo.',
-      impact: 'Un sistema de equipamiento de gimnasio con disponibilidad en tiempo real y una interfaz de administración simple.',
+      challenge: 'Llevar el inventario de equipamiento de gimnasio (barras, kits) y materiales con planillas era propenso a errores.',
+      impact: 'Una app de inventario para armar kits de equipamiento, controlar stock e ingresos de material y gestionar la fabricación de nuevos equipos.',
     },
     'First Chatbot': {
       challenge: 'Hacer accesible el Q&A de documentos con IA sin una configuración pesada.',
