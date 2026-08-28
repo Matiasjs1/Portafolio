@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import useTheme from '../hooks/useTheme'
 
 const icons = {
@@ -12,18 +12,10 @@ const sun = <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWid
 const moon = <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
 
 function Navbar() {
-  const location = useLocation()
-  const isHome = location.pathname === '/'
   const { theme, toggleTheme } = useTheme()
 
   return (
     <nav>
-      <NavLink to="/" aria-label="Home">
-        <div className={isHome ? 'hidden' : 'flex'} id="logo">
-          <img src="/img/profile.png" alt="Matias Sesto" id="profile1" />
-          <h1>Matias Sesto</h1>
-        </div>
-      </NavLink>
       <ul>
         <li className="navElement">
           <NavLink to="/" end>

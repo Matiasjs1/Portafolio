@@ -141,7 +141,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
   padding: 12px 24px;
   background: color-mix(in srgb, var(--bg) 78%, transparent);
@@ -149,25 +149,6 @@ nav {
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--line);
 }
-
-#logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--text);
-}
-
-#profile1 {
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-pill);
-  object-fit: cover;
-  border: 2px solid var(--line);
-}
-
-#logo h1 { font-size: 17px; font-weight: 600; }
 
 nav ul {
   display: flex;
@@ -208,6 +189,8 @@ nav ul li a svg {
 }
 
 .icon-theme {
+  position: absolute;
+  right: 24px;
   width: 40px;
   height: 40px;
   display: flex;
@@ -234,7 +217,7 @@ nav ul li a svg {
   nav ul li a p { display: none; }
   nav ul li a svg { display: block; }
   nav ul li a { padding: 10px; }
-  #logo h1 { font-size: 15px; }
+  .icon-theme { right: 14px; }
 }
 
 /* ============ HOME / HERO ============ */
@@ -754,9 +737,6 @@ footer {
   font-size: 14px;
   text-align: center;
 }
-
-footer .social-links a { width: 40px; height: 40px; }
-footer .social-links a svg { width: 18px; height: 18px; }
 
 /* ============ NOT FOUND ============ */
 #not-found {
