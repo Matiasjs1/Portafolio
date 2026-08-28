@@ -357,77 +357,148 @@ nav ul li a svg {
 .social-links a svg { width: 20px; height: 20px; }
 
 /* ============ ABOUT ============ */
-#contain-about {
+/* secciones con ritmo vertical consistente */
+#about > h2 {
+  margin: 56px 0 24px;
+}
+#about > h2:first-of-type { margin-top: 0; }
+
+/* intro: avatar + lead + value chips */
+.about-intro {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 860px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.about-avatar {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+  padding: 4px;
+  background: conic-gradient(from 180deg, var(--accent), var(--accent-2), var(--accent));
+}
+
+.about-lead {
+  color: var(--text-soft);
+  font-size: 15.5px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.value-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.value-chip {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 6px 12px;
+}
+
+/* facts grid (datos personales) */
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   width: 100%;
   max-width: 860px;
   margin-top: 24px;
 }
 
-#personal-info, #profile, #how-i-work {
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  padding: 24px 28px;
-  box-shadow: 0 6px 20px var(--shadow);
+  padding: 16px 18px;
+  text-align: center;
 }
 
-#about h3 { font-size: 15px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
-
-#info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 24px;
-  margin-top: 6px;
+.fact-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
 }
 
-#info p { margin: 0; font-size: 15px; }
-#info .text-secondary { display: inline-block; min-width: 150px; }
-
-#personal-info p span,
-#profile p, #how-i-work p {
-  color: var(--text-soft);
-  line-height: 1.7;
+.fact-value {
   font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  word-break: break-word;
 }
 
-#profile p:first-of-type, #how-i-work p:first-of-type { margin-top: 6px; }
-
-/* skills */
-#skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-  gap: 12px;
+/* skills agrupadas */
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   width: 100%;
   max-width: 960px;
-  margin-top: 20px;
-  margin-bottom: 36px;
+  margin-top: 24px;
 }
 
-#skills .card {
+.skill-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.skill-group-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.skill-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.skill-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 18px 10px;
-  background: var(--surface);
+  gap: 8px;
+  padding: 14px 10px;
+  background: var(--surface-2);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  transition: transform 0.25s var(--ease), border-color 0.2s, box-shadow 0.25s;
+  transition: transform 0.25s var(--ease), border-color 0.2s, background 0.2s;
 }
 
-#skills .card:hover {
-  transform: translateY(-4px);
+.skill-tile:hover {
+  transform: translateY(-3px);
   border-color: var(--accent);
-  box-shadow: 0 10px 26px var(--shadow);
+  background: var(--accent-soft);
 }
 
-#skills img { height: 40px; width: auto; }
-#skills #php { height: 32px; }
-#skills .card p { font-size: 13px; font-weight: 500; color: var(--text-soft); }
+.skill-tile img { height: 34px; width: auto; }
+.skill-tile p { font-size: 13px; font-weight: 500; color: var(--text-soft); text-align: center; }
 
 /* timeline (education / experience) */
 .timeline {
@@ -456,24 +527,85 @@ nav ul li a svg {
 .timeline-bullets { margin-top: 10px; padding-left: 18px; color: var(--text-soft); font-size: 14px; line-height: 1.7; }
 .timeline-bullets li + li { margin-top: 4px; }
 
-/* courses */
-#courses {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+/* courses (clickeables -> modal certificado) */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+  width: 100%;
   max-width: 980px;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
-.course-chip {
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  cursor: pointer;
+  font-family: var(--font, 'Poppins');
+  color: var(--text);
+  box-shadow: 0 4px 14px var(--shadow);
+  transition: transform 0.25s var(--ease), border-color 0.2s, background 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.course-card svg { flex-shrink: 0; }
+.course-card-title { font-size: 15px; font-weight: 600; line-height: 1.3; }
+.course-card-meta { font-size: 13px; color: var(--text-muted); }
+
+/* ============ CERTIFICATE MODAL ============ */
+.cert-modal { max-width: 760px; }
+.cert-title { display: flex; flex-direction: column; gap: 2px; }
+.cert-provider { color: var(--text-muted); font-size: 13px; }
+.cert-status { color: var(--text-muted); text-align: center; padding: 40px 0; }
+.cert-preview {
+  width: 100%;
+  height: 60vh;
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+}
+.cert-preview-img { object-fit: contain; }
+.cert-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+.cert-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 36px 16px;
+}
+.cert-empty h4 { font-size: 18px; }
+.cert-empty p { color: var(--text-soft); max-width: 400px; }
+.cert-path {
+  font-size: 12px;
+  color: var(--text-muted);
   background: var(--surface-2);
   border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  padding: 8px 16px;
-  font-size: 13px;
-  color: var(--text-soft);
+  border-radius: 6px;
+  padding: 4px 10px;
+  word-break: break-all;
+  margin-top: 6px;
+}
+@media (max-width: 640px) {
+  .cert-actions { flex-direction: column; }
 }
 
 /* ============ PROJECTS ============ */
@@ -754,15 +886,20 @@ footer {
 @media screen and (max-width: 950px) {
   .projects { grid-template-columns: repeat(2, 1fr); }
 }
+@media screen and (max-width: 760px) {
+  .about-intro { flex-direction: column; text-align: center; }
+  .about-lead { text-align: center; }
+  .value-chips { justify-content: center; }
+  .facts-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media screen and (max-width: 640px) {
   .projects { grid-template-columns: 1fr; }
-  #info { grid-template-columns: 1fr; }
-  #info .text-secondary { min-width: 0; }
   #home { padding-top: 48px; }
   #contact-cards { grid-template-columns: 1fr; }
+  .facts-grid { grid-template-columns: 1fr; }
 }
 @media screen and (max-width: 480px) {
-  #skills { grid-template-columns: repeat(2, 1fr); }
+  .skill-tiles { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {

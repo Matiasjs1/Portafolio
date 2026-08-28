@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import CertificateModal from '../components/CertificateModal'
+
 const education = [
   {
     title: 'Information Systems Engineering',
@@ -44,103 +47,113 @@ const experience = [
   },
 ]
 
-const courses = [
-  'Full Stack Web Development Jr. · Generación T / Streambe (240 hs)',
-  'AI with Python · Talento Tech, GCBA (40 hs)',
-  'Ethereum Development · ETH KIPU (50 hs)',
-  'Database Fundamentals · Platzi',
-  'REST APIs with JavaScript · Platzi',
-  'Responsive Web Design · freeCodeCamp',
-  'Unity Game Development · Aprendé Programando, GCBA',
-  'Digital Marketing Tools · CFP N°25, GCBA',
+// Skills agrupadas por categoría. El campo `img` es el archivo en /img/skills/.
+const skillGroups = [
+  {
+    label: 'Frontend',
+    items: [
+      { name: 'HTML', img: 'html.png' },
+      { name: 'CSS', img: 'css.png' },
+      { name: 'JavaScript', img: 'javascript.png' },
+      { name: 'React', img: 'react.png' },
+      { name: 'Vite', img: 'vite.svg' },
+    ],
+  },
+  {
+    label: 'Backend & Databases',
+    items: [
+      { name: 'Node.js', img: 'nodedotjs.svg' },
+      { name: 'Express', img: 'express.svg' },
+      { name: 'PHP', img: 'php.png' },
+      { name: 'MySQL', img: 'mysql.png' },
+      { name: 'MongoDB', img: 'mongodb.svg' },
+    ],
+  },
+  {
+    label: 'Languages',
+    items: [
+      { name: 'Java', img: 'java.png' },
+      { name: 'Python', img: 'python.png' },
+      { name: 'Solidity', img: 'solidity.png' },
+    ],
+  },
+  {
+    label: 'Tools & Hardware',
+    items: [
+      { name: 'Git', img: 'git.png' },
+      { name: 'Arduino', img: 'arduino.png' },
+    ],
+  },
 ]
 
+// Cada curso tiene una ruta `cert` de antemano. Tirá los PDFs en public/pdf/certs/
+// con ese nombre y el modal los muestra/descarga automáticamente.
+const courses = [
+  { title: 'Full Stack Web Development Jr.', provider: 'Generación T / Streambe', hours: '240 hs', year: '2024', cert: '/pdf/certs/fullstack-web-dev-jr.pdf' },
+  { title: 'AI with Python', provider: 'Talento Tech, GCBA', hours: '40 hs', year: '2025', cert: '/pdf/certs/ai-with-python.pdf' },
+  { title: 'Ethereum Development', provider: 'ETH KIPU', hours: '50 hs', year: '2024', cert: '/pdf/certs/ethereum-development.pdf' },
+  { title: 'Database Fundamentals', provider: 'Platzi', year: '2025', cert: '/pdf/certs/database-fundamentals.pdf' },
+  { title: 'REST APIs with JavaScript', provider: 'Platzi', year: '2025', cert: '/pdf/certs/rest-apis-javascript.pdf' },
+  { title: 'Responsive Web Design', provider: 'freeCodeCamp', year: '2025', cert: '/pdf/certs/responsive-web-design.pdf' },
+  { title: 'Unity Game Development', provider: 'Aprendé Programando, GCBA', year: '2023', cert: '/pdf/certs/unity-game-dev.pdf' },
+  { title: 'Digital Marketing Tools', provider: 'CFP N°25, GCBA', year: '2025', cert: '/pdf/certs/digital-marketing.pdf' },
+]
+
+const facts = [
+  { label: 'Full Name', value: 'Matias Joel Sesto' },
+  { label: 'Location', value: 'CABA (Saavedra), Argentina' },
+  { label: 'Availability', value: 'Open to opportunities' },
+  { label: 'Languages', value: 'Spanish, English, French' },
+]
+
+const values = ['Clean, readable code', 'Understand the problem first', 'Iterate until it feels right', 'Always learning']
+
 function About() {
+  const [course, setCourse] = useState(null)
+
   return (
     <section id="about" className="flex">
       <h2>ABOUT <span className="blue-text">ME</span></h2>
-      <div id="contain-about">
-        <div id="personal-info">
-          <h3>PERSONAL INFORMATION</h3>
-          <div id="info">
-            <p><span className="text-secondary">Full Name:</span> Matias Joel Sesto</p>
-            <p><span className="text-secondary">Location:</span> CABA (Saavedra), Argentina</p>
-            <p><span className="text-secondary">Availability:</span> Open to opportunities</p>
-            <p><span className="text-secondary">Languages:</span> Spanish (native), English (B1), French (A1)</p>
+
+      <div className="about-intro">
+        <img src="/img/profile.png" alt="Matias Sesto" className="about-avatar" />
+        <div>
+          <p className="about-lead">
+            Computer Technician currently studying Information Systems Engineering at UTN FRBA.
+            Hands-on experience in full stack web development, smart contracts (Solidity/Ethereum)
+            and building, optimizing and maintaining PCs through my own business. I enjoy turning
+            ideas into functional, well-structured solutions.
+          </p>
+          <div className="value-chips">
+            {values.map((v) => <span className="value-chip" key={v}>{v}</span>)}
           </div>
-        </div>
-        <div id="profile">
-          <h3>PROFILE</h3>
-          <p>Computer Technician currently studying Information Systems Engineering at UTN FRBA. Hands-on experience in full stack web development, smart contracts (Solidity/Ethereum) and building, optimizing and maintaining PCs through my own business. I enjoy turning ideas into functional and well-structured solutions, and I value clear communication and responsibility.</p>
-        </div>
-        <div id="how-i-work">
-          <h3>HOW I WORK</h3>
-          <p>I focus on writing clean, readable, and maintainable code. I understand the problem before coding and iterate until the solution feels solid and intuitive. I adapt quickly to new technologies and I&apos;m constantly learning.</p>
         </div>
       </div>
 
+      <div className="facts-grid">
+        {facts.map((f) => (
+          <div className="fact" key={f.label}>
+            <span className="fact-label">{f.label}</span>
+            <span className="fact-value">{f.value}</span>
+          </div>
+        ))}
+      </div>
+
       <h2><span className="blue-text">MY</span> SKILLS</h2>
-      <div id="skills">
-        <div className="card zoom">
-          <img src="/img/skills/javascript.png" alt="JavaScript" />
-          <p>JavaScript</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/react.png" alt="React" />
-          <p>React</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/nodedotjs.svg" alt="Node.js" />
-          <p>Node.js</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/express.svg" alt="Express" />
-          <p>Express</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/mongodb.svg" alt="MongoDB" />
-          <p>MongoDB</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/vite.svg" alt="Vite" />
-          <p>Vite</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/html.png" alt="HTML" />
-          <p>HTML</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/css.png" alt="CSS" />
-          <p>CSS</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/mysql.png" alt="MySQL" />
-          <p>MySQL</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/php.png" alt="PHP" id="php" />
-          <p>PHP</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/git.png" alt="Git" />
-          <p>Git</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/java.png" alt="Java" />
-          <p>Java</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/solidity.png" alt="Solidity" />
-          <p>Solidity</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/python.png" alt="Python" />
-          <p>Python</p>
-        </div>
-        <div className="card zoom">
-          <img src="/img/skills/arduino.png" alt="Arduino" />
-          <p>Arduino</p>
-        </div>
+      <div className="skills-groups">
+        {skillGroups.map((g) => (
+          <div className="skill-group" key={g.label}>
+            <h3 className="skill-group-label">{g.label}</h3>
+            <div className="skill-tiles">
+              {g.items.map((s) => (
+                <div className="skill-tile zoom" key={s.name} title={s.name}>
+                  <img src={`/img/skills/${s.img}`} alt={s.name} />
+                  <p>{s.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <h2><span className="blue-text">MY</span> EDUCATION</h2>
@@ -170,9 +183,20 @@ function About() {
       </div>
 
       <h2><span className="blue-text">CERTIFIED</span> COURSES</h2>
-      <div id="courses">
-        {courses.map((c) => <p className="course-chip" key={c}>{c}</p>)}
+      <div className="courses-grid">
+        {courses.map((c) => (
+          <button className="course-card zoom" key={c.title} onClick={() => setCourse(c)}>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="var(--accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5z"/>
+              <circle cx="12" cy="15" r="2"/>
+            </svg>
+            <span className="course-card-title">{c.title}</span>
+            <span className="course-card-meta">{c.provider}{c.year ? ` · ${c.year}` : ''}</span>
+          </button>
+        ))}
       </div>
+
+      <CertificateModal course={course} onClose={() => setCourse(null)} />
     </section>
   )
 }
