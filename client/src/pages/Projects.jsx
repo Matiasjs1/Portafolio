@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import { useLanguage } from '../i18n/useLanguage.js'
+import { getProjectDesc } from '../i18n'
 import ProjectModal from '../components/ProjectModal'
 
 function Projects() {
+  const { lang, t } = useLanguage()
   const [projects, setProjects] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -26,27 +29,28 @@ function Projects() {
     }
   }, [])
 
-  if (loading) return <section className="flex"><p>Loading projects...</p></section>
-  if (error) return <section className="flex"><p>Error: {error}</p></section>
+  if (loading) return <section className="flex"><p>{t.projects.loading}</p></section>
+  if (error) return <section className="flex"><p>{t.projects.error}: {error}</p></section>
 
   return (
     <section id="projects" className="flex">
-      <h2><span className="blue-text">MY</span> PROJECTS</h2>
+      <h2><span className="blue-text">{t.projects.title.split(' ')[0]}</span> {t.projects.title.split(' ').slice(1).join(' ')}</h2>
       <div className="projects">
         {projects.map((proyecto) => {
           const thumb = (proyecto.images || []).find(Boolean)
+          const desc = getProjectDesc(lang, proyecto.name, proyecto.description)
           return (
             <article key={proyecto.id} className="project">
               <div className="project-thumb">
                 {thumb ? (
-                  <img src={thumb} alt={`${proyecto.name} preview`} loading="lazy" />
+                  <img src={thumb} alt={`${proyecto.name} ${t.projects.thumbAlt}`} loading="lazy" />
                 ) : (
                   <div className="thumb-placeholder">{proyecto.name.charAt(0)}</div>
                 )}
               </div>
               <div className="project-info">
                 <h2>{proyecto.name}</h2>
-                <span className="tagline">{proyecto.description}</span>
+                <span className="tagline">{desc}</span>
               </div>
               <div className="project-tags">
                 {(proyecto.skills || []).slice(0, 4).map((skill) => (
@@ -55,7 +59,7 @@ function Projects() {
                 {(proyecto.skills || []).length > 4 && <span>+{(proyecto.skills || []).length - 4}</span>}
               </div>
               <div className="project-actions">
-                <button className="details" onClick={() => setSelectedProject(proyecto)}>Details</button>
+                <button className="details" onClick={() => setSelectedProject(proyecto)}>{t.projects.details}</button>
                 {proyecto.url && (
                   <a
                     className="details live"
@@ -63,7 +67,7 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Live demo
+                    {t.projects.liveDemo}
                     <ArrowUpRight size={14} />
                   </a>
                 )}

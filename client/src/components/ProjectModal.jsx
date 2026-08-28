@@ -1,9 +1,13 @@
 import { useEffect } from 'react'
 import { ExternalLink, X } from 'lucide-react'
 import { FiGithub } from 'react-icons/fi'
+import { useLanguage } from '../i18n/useLanguage.js'
+import { getProjectDesc } from '../i18n'
 import Carousel from './Caroussel'
 
 function ProjectModal({ project, onClose }) {
+  const { lang, t } = useLanguage()
+
   useEffect(() => {
     if (!project) return
     const onKeyDown = (e) => {
@@ -26,16 +30,16 @@ function ProjectModal({ project, onClose }) {
           <h3>{project.name}</h3>
           <div className="header-actions">
             {project.repository && (
-              <a href={project.repository} target="_blank" rel="noreferrer" aria-label="Repository" title="Repository" className="icon-link">
+              <a href={project.repository} target="_blank" rel="noreferrer" aria-label={t.projects.repository} title={t.projects.repository} className="icon-link">
                 <FiGithub size={20} />
               </a>
             )}
             {project.url && (
-              <a href={project.url} target="_blank" rel="noreferrer" aria-label="Live demo" title="Live demo" className="icon-link">
+              <a href={project.url} target="_blank" rel="noreferrer" aria-label={t.projects.liveDemo} title={t.projects.liveDemo} className="icon-link">
                 <ExternalLink size={20} />
               </a>
             )}
-            <button className="modal-close" onClick={onClose} aria-label="Close"><X size={18} /></button>
+            <button className="modal-close" onClick={onClose} aria-label={t.projects.close}><X size={18} /></button>
           </div>
         </div>
         <div className="modal-body">
@@ -48,12 +52,12 @@ function ProjectModal({ project, onClose }) {
             </div>
           )}
           <div className="modal-section">
-            <h4>About</h4>
-            <p className="modal-description">{project.description}</p>
+            <h4>{t.projects.aboutLabel}</h4>
+            <p className="modal-description">{getProjectDesc(lang, project.name, project.description)}</p>
           </div>
           {(project.skills || []).length > 0 && (
             <div className="modal-section">
-              <h4>Stack</h4>
+              <h4>{t.projects.stackLabel}</h4>
               <div className="modal-tags">
                 {(project.skills || []).map((skill) => (
                   <span key={skill}>{skill}</span>

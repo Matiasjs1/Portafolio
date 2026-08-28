@@ -1,11 +1,12 @@
+import { useEffect } from 'react';
 import './App.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import { useLanguage } from './i18n/useLanguage.js';
 
 //anotaciones hechas por mi y no por chatgpt, por si no se entiende porq use algunas funciones.
 
@@ -19,15 +20,23 @@ function ScrollToTop() {
 }
 
 function NotFound() {
+  const { t } = useLanguage()
   return (
     <section id="not-found" className="flex">
       <h1>404</h1>
-      <p>Page not found.</p>
+      <p>{t.notFound.title}</p>
     </section>
   )
 }
 
 function App() {
+  const { t } = useLanguage()
+  const year = new Date().getFullYear()
+
+  useEffect(() => {
+    document.title = `${t.home.name} - ${t.home.eyebrow}`
+  }, [t])
+
   return (
     <>
       <div className="home-glow" aria-hidden="true"></div>
@@ -43,7 +52,7 @@ function App() {
         </Routes>
       </main>
       <footer>
-        <p>© {new Date().getFullYear()} Matias Sesto · Full Stack Developer</p>
+        <p>© {year} {t.home.name} · {t.footer.line}</p>
       </footer>
     </>
   );

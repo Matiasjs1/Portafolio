@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Lock, X, Download, ExternalLink } from 'lucide-react'
+import { useLanguage } from '../i18n/useLanguage.js'
 
 function CertificateModal({ course, onClose }) {
+  const { t } = useLanguage()
   const [status, setStatus] = useState('loading')
 
   useEffect(() => {
@@ -56,16 +58,16 @@ function CertificateModal({ course, onClose }) {
               {extended ? ` · ${extended}` : ''}
             </p>
           </div>
-          <button className="modal-close" onClick={onClose} aria-label="Close"><X size={18} /></button>
+          <button className="modal-close" onClick={onClose} aria-label={t.projects.close}><X size={18} /></button>
         </div>
         <div className="modal-body">
-          {status === 'loading' && <p className="cert-status">Loading certificate…</p>}
+          {status === 'loading' && <p className="cert-status">{t.cert.loading}</p>}
 
           {status === 'missing' && (
             <div className="cert-empty">
               <Lock size={54} stroke="var(--accent)" aria-hidden="true" />
-              <h4>Certificate coming soon</h4>
-              <p>I&apos;m uploading this certificate. Check back shortly to view or download it.</p>
+              <h4>{t.cert.comingSoonTitle}</h4>
+              <p>{t.cert.comingSoonBody}</p>
               {course.cert && <code className="cert-path">{course.cert}</code>}
             </div>
           )}
@@ -80,10 +82,10 @@ function CertificateModal({ course, onClose }) {
               <div className="cert-actions">
                 <a className="btn-primary" href={course.cert} download={filename}>
                   <Download size={18} />
-                  Download
+                  {t.cert.download}
                 </a>
                 <a className="btn-ghost" href={course.cert} target="_blank" rel="noreferrer">
-                  Open in new tab
+                  {t.cert.open}
                   <ExternalLink size={18} />
                 </a>
               </div>

@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom'
-import { Home as HomeIcon, User, BookOpen, Mail, Sun, Moon } from 'lucide-react'
+import { Home as HomeIcon, User, BookOpen, Mail, Sun, Moon, Globe } from 'lucide-react'
 import useTheme from '../hooks/useTheme'
+import { useLanguage } from '../i18n/useLanguage.js'
 
 function Navbar() {
   const { theme, toggleTheme } = useTheme()
+  const { lang, toggleLang, t } = useLanguage()
 
   return (
     <nav>
@@ -11,35 +13,46 @@ function Navbar() {
         <li className="navElement">
           <NavLink to="/" end>
             <HomeIcon />
-            <p>HOME</p>
+            <p>{t.nav.home}</p>
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/about">
             <User />
-            <p>ABOUT</p>
+            <p>{t.nav.about}</p>
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/projects">
             <BookOpen />
-            <p>PROJECTS</p>
+            <p>{t.nav.projects}</p>
           </NavLink>
         </li>
         <li className="navElement">
           <NavLink to="/contact">
             <Mail />
-            <p>CONTACT</p>
+            <p>{t.nav.contact}</p>
           </NavLink>
         </li>
       </ul>
-      <button
-        className="icon-theme"
-        onClick={toggleTheme}
-        aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
-      >
-        {theme === 'dark' ? <Moon /> : <Sun />}
-      </button>
+      <div className="nav-controls">
+        <button
+          className="lang-toggle"
+          onClick={toggleLang}
+          aria-label={lang === 'en' ? 'Cambiar a español' : 'Switch to English'}
+          title={lang === 'en' ? 'Español' : 'English'}
+        >
+          <Globe size={16} />
+          <span>{lang === 'en' ? 'ES' : 'EN'}</span>
+        </button>
+        <button
+          className="icon-theme"
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? t.theme.toLight : t.theme.toDark}
+        >
+          {theme === 'dark' ? <Moon /> : <Sun />}
+        </button>
+      </div>
     </nav>
   )
 }
