@@ -1,35 +1,31 @@
 # Portafolio - Matias Sesto
 
-Personal portfolio site: React + Vite single-page app with a light/dark theme, project carousel and modal previews.
+Portafolio personal: SPA React + Vite con tema claro/oscuro, bilingüe (ES/EN), carrusel de proyectos y certificados descargables.
 
-## Structure
+> El README principal del repo está en la raíz (`/README.md`).
 
-```
-client/
-  index.html        # entry, SEO meta + theme FOUC prevention
-  public/
-    projects.json   # project data (name, skills, links, screenshots)
-    pdf/            # CV download
-  img/              # static assets (profile, icons, screenshots, skill logos)
-  src/
-    App.jsx         # routes (/, /about, /projects, /contact, 404) + ScrollToTop
-    components/     # Navbar, Caroussel, ProjectModal
-    hooks/useTheme  # dark/light theme persisted in localStorage
-    pages/          # Home, About, Projects, Contact
-```
-
-## Development
+## Scripts
 
 ```bash
-cd client
 npm install
-npm run dev      # local dev server
-npm run build    # production build to dist/
+npm run dev      # servidor de desarrollo
+npm run build    # build de producción → dist/
+npm run preview  # sirve el build localmente
 npm run lint     # eslint
 ```
 
-## Notes
+## Estructura
 
-- Project cards are driven entirely by `public/projects.json`; add an entry there to publish a new project.
-- Screenshots live in `img/screens/<project>-screens/`.
-- Deployed statically (dist/ is git-ignored; build it in CI or locally).
+```
+public/
+  projects.json    # datos de los proyectos
+  img/             # assets (avatar, iconos, screenshots, logos de skills)
+  pdf/             # CV + certificados (pdf/certs/)
+src/
+  App.jsx          # rutas, ScrollToTop, footer
+  i18n.js          # textos ES/EN + detección de idioma
+  i18n/            # LanguageProvider + useLanguage
+  components/      # Navbar, Caroussel, ProjectModal, CertificateModal
+  pages/           # Home, About, Projects, Contact
+  hooks/useTheme   # tema claro/oscuro
+```
