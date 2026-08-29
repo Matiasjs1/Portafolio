@@ -1,30 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "Animelink",
-      "skills": [
-        "React",
-        "Express",
-        "MongoDB",
-        "Node.js",
-        "Vite"
-      ],
-      "description": "Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.",
-      "repository": "https://github.com/Matiasjs1/animelink",
-      "url": "https://www.animelink.lat",
-      "video": "",
-      "images": [
-        "/img/screens/animelink-screens/screen1.png",
-        "/img/screens/animelink-screens/screen2.png",
-        "/img/screens/animelink-screens/screen3.png",
-        "/img/screens/animelink-screens/screen4.png",
-        "/img/screens/animelink-screens/screen5.png"
-      ],
-      "challenge": "Anime fans had no daily NYT-Connections-style puzzle: group 9 items into 3 hidden categories, one fresh puzzle each day.",
-      "impact": "A daily Connections clone in production (animelink.lat) with a 3x3 grid, a 2/3 proximity hint, one hint per round, 4 dragon-ball lives, anime and character modes, an archive to replay any day, stats and streaks. Full MERN monorepo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, deployed on Vercel + Render, sharing the database with Animedle."
-    },
-    {
       "id": 2,
       "name": "Animedle",
       "skills": [
@@ -59,7 +35,7 @@
       ],
       "description": "Web platform for formal, respectful debate. Text and voice debates between 2-4 people, with moderation, sanctions and personal statistics.",
       "repository": "https://github.com/Matiasjs1/deb8",
-      "url": "",
+      "url": "https://deb8-6p72.onrender.com/",
       "video": "https://www.youtube.com/embed/Zx_KFn8JMaY?si=QQaVQBEq2bo8y0na",
       "images": [
         "/img/screens/deb8-screens/screen1.png",
@@ -83,7 +59,7 @@
       ],
       "description": "Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.",
       "repository": "https://github.com/Matiasjs1/Reservas-Paintball",
-      "url": "",
+      "url": "http://reservas-paintball.free.nf/",
       "video": "",
       "images": [
         "/img/screens/paintball-screens/screen1.png",
@@ -94,6 +70,111 @@
       ],
       "challenge": "A real paintball field (running since 2010) booked its 3 courts by phone, causing double bookings and chaos on weekends.",
       "impact": "A reservation platform with user accounts, per-court scheduling (date/time), pricing by capacity, and online payment — used in place of manual phone booking."
+    },
+    {
+      "id": 1,
+      "name": "Animelink",
+      "skills": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node.js",
+        "Vite"
+      ],
+      "description": "Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.",
+      "repository": "https://github.com/Matiasjs1/animelink",
+      "url": "https://www.animelink.lat",
+      "video": "",
+      "images": [
+        "/img/screens/animelink-screens/screen1.png",
+        "/img/screens/animelink-screens/screen2.png",
+        "/img/screens/animelink-screens/screen3.png",
+        "/img/screens/animelink-screens/screen4.png",
+        "/img/screens/animelink-screens/screen5.png"
+      ],
+      "challenge": "Anime fans had no daily NYT-Connections-style puzzle: group 9 items into 3 hidden categories, one fresh puzzle each day.",
+      "impact": "A daily Connections clone in production (animelink.lat) with a 3x3 grid, a 2/3 proximity hint, one hint per round, 4 dragon-ball lives, anime and character modes, an archive to replay any day, stats and streaks. Full MERN monorepo (React 18 + Vite 5, Express + MongoDB), i18n ES/EN/PT, deployed on Vercel + Render, sharing the database with Animedle."
+    },
+    {
+      "id": 6,
+      "name": "Plant It",
+      "skills": [
+        "React",
+        "MongoDB",
+        "Node.js",
+        "Express",
+        "Arduino"
+      ],
+      "description": "A sustainability project combining an Arduino ESP32 plant-monitor with a MERN web app to manage plant care and promote greener habits.",
+      "repository": "https://github.com/felig76/Plant-It",
+      "url": "",
+      "video": "https://www.youtube.com/embed/MwUX9WhQYhI?si=Zk5Od4qNpNr31HjI",
+      "images": [
+        "/img/screens/plantit-screens/screen1.png",
+        "/img/screens/plantit-screens/screen2.png",
+        "/img/screens/plantit-screens/screen3.png"
+      ],
+      "challenge": "Caring for plants is guesswork without live readings of their conditions, and green habits lack an accessible tool.",
+      "impact": "An Arduino ESP32 sensor node (temperature/humidity, light, soil-moisture probe) streams plant conditions over WiFi to a MERN web app (React, Express, MongoDB, Node.js) that manages plant care and greener habits. Semifinalist in Samsung's Solve for Tomorrow."
+    },
+    {
+      "id": 4,
+      "name": "JBrain",
+      "skills": [
+        "Java",
+        "MySQL",
+        "Swing"
+      ],
+      "description": "Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
+      "repository": "https://github.com/Matiasjs1/JBrain",
+      "url": "",
+      "video": "",
+      "images": [
+        "/img/screens/jbrain-screens/screen1.png",
+        "/img/screens/jbrain-screens/screen2.png",
+        "/img/screens/jbrain-screens/screen3.png",
+        "/img/screens/jbrain-screens/screen4.png"
+      ],
+      "challenge": "Teachers needed a fun quiz tool with roles for students and teachers.",
+      "impact": "An educational quiz game with customizable features, user accounts and persistent results in a MySQL database."
+    },
+    {
+      "id": 8,
+      "name": "First Chatbot",
+      "skills": [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "OpenAI"
+      ],
+      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
+      "repository": "https://github.com/Matiasjs1/first-chatbot",
+      "url": "https://first-chatbot-mjs.streamlit.app/",
+      "video": "",
+      "images": [],
+      "challenge": "Making AI document Q&A accessible without a heavy setup.",
+      "impact": "A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud."
+    },
+    {
+      "id": 9,
+      "name": "Coppay",
+      "skills": [
+        "Solidity",
+        "Foundry",
+        "OpenZeppelin"
+      ],
+      "description": "Decentralized platform for school cooperatives (CABA) where families donate, audit on-chain and propose/vote improvements. A team project with the ETH Kipu Foundation and CABA technical-school students.",
+      "repository": "https://github.com/coppaykipu/coppay-core",
+      "url": "",
+      "video": "",
+      "images": [
+        "/img/screens/coppay-screens/screen1.png",
+        "/img/screens/coppay-screens/screen2.png",
+        "/img/screens/coppay-screens/screen3.png",
+        "/img/screens/coppay-screens/screen4.png"
+      ],
+      "challenge": "School cooperative funds are opaque and easily corrupted: little transparency, no community say in how the money is spent.",
+      "impact": "Four Solidity 0.8.26 contracts (AccessControl, FirstRound, SecondRound, Vault): two voting rounds, double-voting prevention, quadratic voting and budget locking. My role was the FirstRound contract: proposal creation, a 7-day voting window, the 50% threshold and double-voting prevention (ETH Kipu professional practicum, team project)."
     },
     {
       "id": 7,
@@ -118,87 +199,6 @@
       ],
       "challenge": "A shipping company managed drivers, deliveries and returns on paper, with no central system.",
       "impact": "A full CRUD logistics app: driver registry (id, DNI, age, salary), delivery dispatch, shipment tracking and returns, with role-based PHP pages."
-    },
-    {
-      "id": 6,
-      "name": "MyFit",
-      "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "MySQL"
-      ],
-      "description": "Gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.",
-      "repository": "https://github.com/Matiasjs1/MyFit",
-      "url": "",
-      "video": "",
-      "images": [
-        "/img/screens/myfit-screens/screen1.png",
-        "/img/screens/myfit-screens/screen2.png",
-        "/img/screens/myfit-screens/screen3.png",
-        "/img/screens/myfit-screens/screen4.png",
-        "/img/screens/myfit-screens/screen5.png"
-      ],
-      "challenge": "Tracking gym equipment inventory (bars, kits) and materials was error-prone with spreadsheets.",
-      "impact": "An inventory app to build equipment kits, track stock and material inputs, and manage manufacturing of new gear."
-    },
-    {
-      "id": 8,
-      "name": "First Chatbot",
-      "skills": [
-        "Python",
-        "Streamlit",
-        "LangChain",
-        "OpenAI"
-      ],
-      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
-      "repository": "https://github.com/Matiasjs1/first-chatbot",
-      "url": "https://first-chatbot-mjs.streamlit.app/",
-      "video": "",
-      "images": [],
-      "challenge": "Making AI document Q&A accessible without a heavy setup.",
-      "impact": "A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud."
-    },
-    {
-      "id": 9,
-      "name": "EthereumCodes",
-      "skills": [
-        "Solidity",
-        "Hardhat",
-        "Ethers.js",
-        "OpenZeppelin"
-      ],
-      "description": "Smart contracts practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs and access-control patterns. Certified 50-hour professional practicum by ETH KIPU and CABA Technical Schools.",
-      "repository": "https://github.com/Matiasjs1/EthereumCodes",
-      "url": "",
-      "video": "",
-      "images": [
-        "/img/screens/ethereumcodes-screens/screen1.svg"
-      ],
-      "challenge": "Learning Solidity by building real, reusable contract patterns.",
-      "impact": "Voting systems, ERC20 tokens and NFTs with access control, certified by a 50-hour ETH KIPU practicum."
-    },
-    {
-      "id": 4,
-      "name": "JBrain",
-      "skills": [
-        "Java",
-        "MySQL",
-        "Swing"
-      ],
-      "description": "Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.",
-      "repository": "https://github.com/Matiasjs1/JBrain",
-      "url": "",
-      "video": "",
-      "images": [
-        "/img/screens/jbrain-screens/screen1.png",
-        "/img/screens/jbrain-screens/screen2.png",
-        "/img/screens/jbrain-screens/screen3.png",
-        "/img/screens/jbrain-screens/screen4.png"
-      ],
-      "challenge": "Teachers needed a fun quiz tool with roles for students and teachers.",
-      "impact": "An educational quiz game with customizable features, user accounts and persistent results in a MySQL database."
     }
   ]
 }

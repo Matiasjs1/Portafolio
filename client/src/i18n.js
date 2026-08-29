@@ -33,8 +33,8 @@ export const translations = {
       skillsTitle: 'My Skills',
       skillGroups: [
         { label: 'Frontend', items: [{ name: 'HTML', img: 'html.png' }, { name: 'CSS', img: 'css.png' }, { name: 'JavaScript', img: 'javascript.png' }, { name: 'React', img: 'react.png' }, { name: 'Vite', img: 'vite.svg' }] },
-        { label: 'Backend & Databases', items: [{ name: 'Node.js', img: 'nodedotjs.svg' }, { name: 'Express', img: 'express.svg' }, { name: 'PHP', img: 'php.png' }, { name: 'MySQL', img: 'mysql.png' }, { name: 'MongoDB', img: 'mongodb.svg' }] },
-        { label: 'Languages', items: [{ name: 'Java', img: 'java.png' }, { name: 'Python', img: 'python.png' }, { name: 'Solidity', img: 'solidity.png' }] },
+        { label: 'Backend', items: [{ name: 'Node.js', img: 'nodedotjs.svg' }, { name: 'Express', img: 'express.svg' }, { name: 'PHP', img: 'php.png' }, { name: 'Java', img: 'java.png' }, { name: 'Python', img: 'python.png' }, { name: 'Solidity', img: 'solidity.png' }, { name: 'C++', img: 'cplusplus.svg' }] },
+        { label: 'Databases', items: [{ name: 'MySQL', img: 'mysql.png' }, { name: 'MongoDB', img: 'mongodb.svg' }] },
         { label: 'Tools & Hardware', items: [{ name: 'Git', img: 'git.png' }, { name: 'Arduino', img: 'arduino.png' }] },
       ],
       educationTitle: 'My Education',
@@ -150,8 +150,8 @@ export const translations = {
       skillsTitle: 'Mis habilidades',
       skillGroups: [
         { label: 'Frontend', items: [{ name: 'HTML', img: 'html.png' }, { name: 'CSS', img: 'css.png' }, { name: 'JavaScript', img: 'javascript.png' }, { name: 'React', img: 'react.png' }, { name: 'Vite', img: 'vite.svg' }] },
-        { label: 'Backend y bases de datos', items: [{ name: 'Node.js', img: 'nodedotjs.svg' }, { name: 'Express', img: 'express.svg' }, { name: 'PHP', img: 'php.png' }, { name: 'MySQL', img: 'mysql.png' }, { name: 'MongoDB', img: 'mongodb.svg' }] },
-        { label: 'Lenguajes', items: [{ name: 'Java', img: 'java.png' }, { name: 'Python', img: 'python.png' }, { name: 'Solidity', img: 'solidity.png' }] },
+        { label: 'Backend', items: [{ name: 'Node.js', img: 'nodedotjs.svg' }, { name: 'Express', img: 'express.svg' }, { name: 'PHP', img: 'php.png' }, { name: 'Java', img: 'java.png' }, { name: 'Python', img: 'python.png' }, { name: 'Solidity', img: 'solidity.png' }, { name: 'C++', img: 'cplusplus.svg' }] },
+        { label: 'Bases de Datos', items: [{ name: 'MySQL', img: 'mysql.png' }, { name: 'MongoDB', img: 'mongodb.svg' }] },
         { label: 'Herramientas y hardware', items: [{ name: 'Git', img: 'git.png' }, { name: 'Arduino', img: 'arduino.png' }] },
       ],
       educationTitle: 'Mi educación',
@@ -248,9 +248,9 @@ export const projectDesc = {
     'Deb8': 'Web platform for formal, respectful debate. Text and voice debates between 2-4 people, with moderation, sanctions and personal statistics.',
     'First Chatbot': 'Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.',
     'MAYCO': 'Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.',
-    'EthereumCodes': 'Smart contracts practice repo: voting systems (IVotingSystem, VotingSystem), ERC20 tokens, NFTs and access-control patterns. Certified 50-hour professional practicum by ETH KIPU and CABA Technical Schools.',
+    'Coppay': 'Decentralized platform for school cooperatives (CABA) where families donate, audit on-chain and propose/vote improvements. A team project with the ETH Kipu Foundation and CABA technical-school students.',
     'Paintball': 'Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.',
-    'MyFit': 'Gym equipment management system with real-time availability tracking and an intuitive interface to simplify the administration of bars and accessories.',
+    'Plant It': 'A sustainability project combining an Arduino ESP32 plant-monitor with a MERN web app to manage plant care and promote greener habits.',
     'JBrain': 'Educational quiz game with teacher and student roles, customizable features, user accounts, and persistent results stored in a database.',
   },
   es: {
@@ -259,9 +259,9 @@ export const projectDesc = {
     'Deb8': 'Plataforma web para el debate formal y respetuoso. Debates por texto y voz entre 2 y 4 personas, con moderación, sanciones y estadísticas personales.',
     'First Chatbot': 'Chatbot de IA conversacional construido con Streamlit y LangChain. Q&A de documentos, memoria de conversación, deployable en Streamlit Cloud.',
     'MAYCO': 'Sistema de gestión logística para empresa de envíos: gestión de conductores, seguimiento de entregas, devoluciones y flujos de despacho. PHP + MySQL a medida con frontend JS vanilla.',
-    'EthereumCodes': 'Repositorio de práctica de contratos inteligentes: sistemas de votación (IVotingSystem, VotingSystem), tokens ERC20, NFTs y patrones de control de acceso. Práctica profesionalizante de 50 horas certificada por ETH KIPU y las Escuelas Técnicas de CABA.',
+    'Coppay': 'Plataforma descentralizada para cooperadoras escolares (CABA) donde las familias donan, auditan on-chain y proponen/votan mejoras. Proyecto en equipo con la Fundación ETH Kipu y estudiantes de escuelas técnicas de CABA.',
     'Paintball': 'Sistema de reservas online para canchas de paintball con programación en tiempo real, prevención de reservas duplicadas, integración de pagos y panel de administración.',
-    'MyFit': 'Sistema de gestión de equipamiento de gimnasio con seguimiento de disponibilidad en tiempo real y una interfaz intuitiva para simplificar la administración de barras y accesorios.',
+    'Plant It': 'Un proyecto de sustentabilidad que une un monitor de plantas con Arduino (ESP32) y una app web MERN para gestionar el cuidado de las plantas y hábitos más verdes.',
     'JBrain': 'Juego educativo de preguntas con roles de docente y alumno, funciones personalizables, cuentas de usuario y resultados persistentes en base de datos.',
   },
 }
@@ -289,17 +289,17 @@ export const projectMeta = {
       challenge: 'A shipping company managed drivers, deliveries and returns on paper, with no central system.',
       impact: 'A full CRUD logistics app: driver registry (id, DNI, age, salary), delivery dispatch, shipment tracking and returns, with role-based PHP pages.',
     },
-    'MyFit': {
-      challenge: 'Tracking gym equipment inventory (bars, kits) and materials was error-prone with spreadsheets.',
-      impact: 'An inventory app to build equipment kits, track stock and material inputs, and manage manufacturing of new gear.',
+    'Plant It': {
+      challenge: 'Caring for plants is guesswork without live readings of their conditions, and green habits lack an accessible tool.',
+      impact: 'An Arduino ESP32 sensor node (temperature/humidity, light, soil-moisture probe) streams plant conditions over WiFi to a MERN web app (React, Express, MongoDB, Node.js) that manages plant care and greener habits. Semifinalist in Samsung\'s Solve for Tomorrow.',
     },
     'First Chatbot': {
       challenge: 'Making AI document Q&A accessible without a heavy setup.',
       impact: 'A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud.',
     },
-    'EthereumCodes': {
-      challenge: 'Learning Solidity by building real, reusable contract patterns.',
-      impact: 'Voting systems, ERC20 tokens and NFTs with access control, certified by a 50-hour ETH KIPU practicum.',
+    'Coppay': {
+      challenge: 'School cooperative funds are opaque and easily corrupted: little transparency, no community say in how the money is spent.',
+      impact: 'Four Solidity 0.8.26 contracts (AccessControl, FirstRound, SecondRound, Vault): two voting rounds, double-voting prevention, quadratic voting and budget locking. My role was the FirstRound contract: proposal creation, a 7-day voting window, the 50% threshold and double-voting prevention (ETH Kipu professional practicum, team project).',
     },
     'JBrain': {
       challenge: 'Teachers needed a fun quiz tool with roles for students and teachers.',
@@ -327,17 +327,17 @@ export const projectMeta = {
       challenge: 'Una empresa de envíos manejaba conductores, entregas y devoluciones en papel, sin un sistema central.',
       impact: 'Una app de logística con CRUD completo: registro de conductores (id, DNI, edad, sueldo), despacho de envíos, seguimiento y devoluciones, con páginas PHP por rol.',
     },
-    'MyFit': {
-      challenge: 'Llevar el inventario de equipamiento de gimnasio (barras, kits) y materiales con planillas era propenso a errores.',
-      impact: 'Una app de inventario para armar kits de equipamiento, controlar stock e ingresos de material y gestionar la fabricación de nuevos equipos.',
+    'Plant It': {
+      challenge: 'Cuidar las plantas es una lotería sin lecturas en tiempo real de sus condiciones, y faltan herramientas accesibles para hábitos verdes.',
+      impact: 'Un nodo sensor con Arduino (ESP32) (temperatura/humedad, luz, sonda de humedad de suelo) envía las condiciones de la planta por WiFi a una app web MERN (React, Express, MongoDB, Node.js) que gestiona su cuidado y hábitos más verdes. Semifinalista en Samsung Solve for Tomorrow.',
     },
     'First Chatbot': {
       challenge: 'Hacer accesible el Q&A de documentos con IA sin una configuración pesada.',
       impact: 'Un chatbot con Streamlit y LangChain para Q&A de documentos con memoria de conversación, deployable en Streamlit Cloud.',
     },
-    'EthereumCodes': {
-      challenge: 'Aprender Solidity construyendo patrones de contratos reales y reutilizables.',
-      impact: 'Sistemas de votación, tokens ERC20 y NFTs con control de acceso, certificados por una práctica de 50 horas de ETH KIPU.',
+    'Coppay': {
+      challenge: 'Los fondos de las cooperadoras escolares son opacos y fácilmente corruptibles: poca transparencia y sin participación de la comunidad en cómo se gasta el dinero.',
+      impact: 'Cuatro contratos Solidity 0.8.26 (AccessControl, FirstRound, SecondRound, Vault): dos rondas de votación, prevención de doble voto, voto cuadrático y bloqueo de presupuesto. Mi rol fue el contrato FirstRound: creación de propuestas, ventana de votación de 7 días, umbral del 50% y prevención de doble voto (práctica profesionalizante ETH Kipu, proyecto en equipo).',
     },
     'JBrain': {
       challenge: 'Los docentes necesitaban una herramienta de quiz divertida con roles para alumnos y docentes.',
