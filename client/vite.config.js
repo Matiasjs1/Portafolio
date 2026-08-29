@@ -4,7 +4,7 @@ import { writeFileSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 
 // Base del sitio. Cambiá acá (o en .env VITE_SITE_URL) cuando tengas dominio propio.
-const SITE_URL = (process.env.VITE_SITE_URL || 'https://matiasjs1.github.io/Portafolio').replace(/\/$/, '')
+const SITE_URL = (process.env.VITE_SITE_URL || 'https://msesto.dev').replace(/\/$/, '')
 
 // Inyecta %SITE_URL% en index.html y genera robots.txt + sitemap.xml en el build.
 function seoPlugin() {
