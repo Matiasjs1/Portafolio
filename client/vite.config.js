@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { writeFileSync, mkdirSync } from 'node:fs'
+import { writeFileSync, mkdirSync, readFileSync, unlinkSync } from 'node:fs'
 import { join } from 'node:path'
 
 // Base del sitio. Cambiá acá (o en .env VITE_SITE_URL) cuando tengas dominio propio.
@@ -36,6 +36,39 @@ function seoPlugin() {
   }
 }
 
+// Inliera el CSS de entrada en dist/index.html y borra el archivo .css,
+// para que no haya un request render-blocking. Solo toca /assets/*.css
+// (deja los <link> de Google Fonts, modulepreload y el CSS de rutas lazy).
+function inlineEntryCss() {
+  return {
+    name: 'inline-entry-css',
+    apply: 'build',
+    closeBundle() {
+      const outDir = 'dist'
+      const indexPath = join(outDir, 'index.html')
+      let html = readFileSync(indexPath, 'utf-8')
+      const styles = []
+      const removed = []
+      const linkTagRe = /<link\b[^>]*>/g
+      html = html.replace(linkTagRe, (tag) => {
+        const rel = tag.match(/\brel\s*=\s*["']([^"']*)["']/i)
+        const href = tag.match(/\bhref\s*=\s*["']([^"']*)["']/i)
+        if (rel && /\bstylesheet\b/i.test(rel[1]) && href && /^\/assets\/[^"']+\.css$/i.test(href[1])) {
+          styles.push(readFileSync(join(outDir, '.' + href[1]), 'utf-8'))
+          removed.push(href[1])
+          return ''
+        }
+        return tag
+      })
+      if (removed.length) {
+        html = html.replace('</head>', '<style>' + styles.join('\n') + '</style>\n</head>')
+        writeFileSync(indexPath, html)
+        removed.forEach((h) => unlinkSync(join(outDir, '.' + h)))
+      }
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), seoPlugin()],
+  plugins: [react(), seoPlugin(), inlineEntryCss()],
 })

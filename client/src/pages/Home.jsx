@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <section id="home" className="flex">
-      <img src="/img/profile.webp" alt={t.home.name} id="profile2" />
+      <img src="/img/profile.webp" alt={t.home.name} id="profile2" fetchPriority="high" />
       <div id="information">
         <span className="eyebrow">{t.home.eyebrow}</span>
         <h1>{t.home.name}</h1>

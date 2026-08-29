@@ -1,0 +1,16 @@
+# Matias Sesto - Full Stack Developer
+
+> Full stack developer and software student based in Buenos Aires, Argentina. I build web applications, smart contracts, and real-world systems.
+
+## Projects
+
+- [Animelink](https://www.animelink.lat): daily Connections-style puzzle for anime fans (React + Express + MongoDB).
+- [Animedle](https://www.animedle.lat): anime guessing game with 6 modes, including real-time rooms (React + Express + MongoDB).
+- [Deb8](https://deb8-6p72.onrender.com/): formal debate platform with text and voice support.
+- [Coppay](https://github.com/coppaykipu/coppay-core): on-chain platform for CABA school cooperatives (I wrote the FirstRound contract).
+- [Plant It](https://github.com/felig76/Plant-It): MERN + ESP32 plant-monitoring web app (Samsung Solve for Tomorrow semifinalist).
+
+## Social
+
+- [GitHub](https://github.com/Matiasjs1)
+- [LinkedIn](https://www.linkedin.com/in/matias-sesto-b5aa8b33a)

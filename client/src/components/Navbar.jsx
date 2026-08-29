@@ -11,25 +11,25 @@ function Navbar() {
     <nav>
       <ul>
         <li className="navElement">
-          <NavLink to="/" end>
+          <NavLink to="/" end aria-label={t.nav.home}>
             <HomeIcon />
             <p>{t.nav.home}</p>
           </NavLink>
         </li>
         <li className="navElement">
-          <NavLink to="/about">
+          <NavLink to="/about" aria-label={t.nav.about}>
             <User />
             <p>{t.nav.about}</p>
           </NavLink>
         </li>
         <li className="navElement">
-          <NavLink to="/projects">
+          <NavLink to="/projects" aria-label={t.nav.projects}>
             <BookOpen />
             <p>{t.nav.projects}</p>
           </NavLink>
         </li>
         <li className="navElement">
-          <NavLink to="/contact">
+          <NavLink to="/contact" aria-label={t.nav.contact}>
             <Mail />
             <p>{t.nav.contact}</p>
           </NavLink>
