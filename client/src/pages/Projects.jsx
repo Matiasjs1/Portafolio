@@ -1,36 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { useLanguage } from '../i18n/useLanguage.js'
 import { getProjectDesc } from '../i18n'
 import ProjectModal from '../components/ProjectModal'
+import projectsData from '../data/projects.json'
 
 function Projects() {
   const { lang, t } = useLanguage()
-  const [projects, setProjects] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
   const [selectedProject, setSelectedProject] = useState(null)
-
-  useEffect(() => {
-    let active = true
-    fetch('/projects.json')
-      .then((r) => {
-        if (!r.ok) throw new Error('Failed to load projects.json')
-        return r.json()
-      })
-      .then((data) => {
-        if (!active) return
-        setProjects(Array.isArray(data.projects) ? data.projects : [])
-      })
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false))
-    return () => {
-      active = false
-    }
-  }, [])
-
-  if (loading) return <section className="flex"><p>{t.projects.loading}</p></section>
-  if (error) return <section className="flex"><p>{t.projects.error}: {error}</p></section>
+  const projects = Array.isArray(projectsData.projects) ? projectsData.projects : []
 
   return (
     <section id="projects" className="flex">

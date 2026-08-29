@@ -87,7 +87,6 @@ export const translations = {
     },
     projects: {
       title: 'My Projects',
-      loading: 'Loading projects...',
       error: 'Error',
       details: 'Details',
       liveDemo: 'Live demo',
@@ -204,7 +203,6 @@ export const translations = {
     },
     projects: {
       title: 'Mis proyectos',
-      loading: 'Cargando proyectos...',
       error: 'Error',
       details: 'Detalles',
       liveDemo: 'Demo en vivo',
