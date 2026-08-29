@@ -11,7 +11,7 @@
         "Vite"
       ],
       "description": "Wordle-style anime guessing game with multiple modes. Progressive hints, daily challenge, statistics, streaks. Full-stack with shared MongoDB collections (anime/character data).",
-      "repository": "https://github.com/Matiasjs1/Animedle1",
+      "repository": "https://github.com/Matiasjs1/animedle-mirror",
       "url": "https://www.animedle.lat",
       "video": "",
       "images": [
@@ -82,7 +82,7 @@
         "Vite"
       ],
       "description": "Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.",
-      "repository": "https://github.com/Matiasjs1/animelink",
+      "repository": "https://github.com/Matiasjs1/animelink-mirror",
       "url": "https://www.animelink.lat",
       "video": "",
       "images": [
