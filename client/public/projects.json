@@ -144,16 +144,18 @@
       "skills": [
         "Python",
         "Streamlit",
-        "LangChain",
-        "OpenAI"
+        "Groq API"
       ],
-      "description": "Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.",
+      "description": "Streamlit chat app powered by Groq's LLM API. Sidebar model picker, streaming responses, in-session chat history.",
       "repository": "https://github.com/Matiasjs1/first-chatbot",
       "url": "https://first-chatbot-mjs.streamlit.app/",
       "video": "",
-      "images": [],
-      "challenge": "Making AI document Q&A accessible without a heavy setup.",
-      "impact": "A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud."
+      "images": [
+        "/img/screens/chatbot-screens/screen1.png",
+        "/img/screens/chatbot-screens/screen2.png"
+      ],
+      "challenge": "Chatting with an LLM from the browser with zero setup.",
+      "impact": "A deployable Streamlit chatbot that streams responses from Groq models (Llama 3.3 70B, Llama 3.1 8B, Gemma 2), with a sidebar model selector and in-session conversation history."
     },
     {
       "id": 9,

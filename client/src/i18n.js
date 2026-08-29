@@ -246,7 +246,7 @@ export const projectDesc = {
     'Animelink': 'Daily Connections-style puzzle game for anime fans. 3x3 grid, group 9 items into 3 hidden categories. Daily puzzles, archive, stats, streaks, hints. Shares MongoDB with Animedle.',
     'Animedle': 'Wordle-style anime guessing game with multiple modes. Progressive hints, daily challenge, statistics, streaks. Full-stack with shared MongoDB collections (anime/character data).',
     'Deb8': 'Web platform for formal, respectful debate. Text and voice debates between 2-4 people, with moderation, sanctions and personal statistics.',
-    'First Chatbot': 'Conversational AI chatbot built with Streamlit and LangChain. Document QA, conversation memory, deployable to Streamlit Cloud.',
+    'First Chatbot': 'Streamlit chat app powered by Groq\'s LLM API. Sidebar model picker, streaming responses, in-session chat history.',
     'MAYCO': 'Logistics management system for shipping company: driver management, delivery tracking, returns, dispatch workflows. Custom PHP + MySQL with vanilla JS frontend.',
     'Coppay': 'Decentralized platform for school cooperatives (CABA) where families donate, audit on-chain and propose/vote improvements. A team project with the ETH Kipu Foundation and CABA technical-school students.',
     'Paintball': 'Online reservation system for paintball fields with real-time scheduling, duplicate booking prevention, payment integration, and admin panel.',
@@ -257,7 +257,7 @@ export const projectDesc = {
     'Animelink': 'Juego de puzzle diario estilo Connections para fanáticos del anime. Grilla 3x3, agrupá 9 ítems en 3 categorías ocultas. Puzzles diarios, archivo, estadísticas, rachas y pistas. Comparte MongoDB con Animedle.',
     'Animedle': 'Juego de adivinanzas estilo Wordle de anime con múltiples modos. Pistas progresivas, desafío diario, estadísticas y rachas. Full-stack con colecciones MongoDB compartidas (datos de anime/personajes).',
     'Deb8': 'Plataforma web para el debate formal y respetuoso. Debates por texto y voz entre 2 y 4 personas, con moderación, sanciones y estadísticas personales.',
-    'First Chatbot': 'Chatbot de IA conversacional construido con Streamlit y LangChain. Q&A de documentos, memoria de conversación, deployable en Streamlit Cloud.',
+    'First Chatbot': 'App de chat con Streamlit y la API de Groq. Selector de modelo en la barra lateral, respuestas en streaming e historial de chat en la sesión.',
     'MAYCO': 'Sistema de gestión logística para empresa de envíos: gestión de conductores, seguimiento de entregas, devoluciones y flujos de despacho. PHP + MySQL a medida con frontend JS vanilla.',
     'Coppay': 'Plataforma descentralizada para cooperadoras escolares (CABA) donde las familias donan, auditan on-chain y proponen/votan mejoras. Proyecto en equipo con la Fundación ETH Kipu y estudiantes de escuelas técnicas de CABA.',
     'Paintball': 'Sistema de reservas online para canchas de paintball con programación en tiempo real, prevención de reservas duplicadas, integración de pagos y panel de administración.',
@@ -294,8 +294,8 @@ export const projectMeta = {
       impact: 'An Arduino ESP32 sensor node (temperature/humidity, light, soil-moisture probe) streams plant conditions over WiFi to a MERN web app (React, Express, MongoDB, Node.js) that manages plant care and greener habits. Semifinalist in Samsung\'s Solve for Tomorrow.',
     },
     'First Chatbot': {
-      challenge: 'Making AI document Q&A accessible without a heavy setup.',
-      impact: 'A Streamlit + LangChain chatbot for document QA with conversation memory, deployable to Streamlit Cloud.',
+      challenge: 'Chatting with an LLM from the browser with zero setup.',
+      impact: 'A deployable Streamlit chatbot that streams responses from Groq models (Llama 3.3 70B, Llama 3.1 8B, Gemma 2), with a sidebar model selector and in-session conversation history.',
     },
     'Coppay': {
       challenge: 'School cooperative funds are opaque and easily corrupted: little transparency, no community say in how the money is spent.',
@@ -332,8 +332,8 @@ export const projectMeta = {
       impact: 'Un nodo sensor con Arduino (ESP32) (temperatura/humedad, luz, sonda de humedad de suelo) envía las condiciones de la planta por WiFi a una app web MERN (React, Express, MongoDB, Node.js) que gestiona su cuidado y hábitos más verdes. Semifinalista en Samsung Solve for Tomorrow.',
     },
     'First Chatbot': {
-      challenge: 'Hacer accesible el Q&A de documentos con IA sin una configuración pesada.',
-      impact: 'Un chatbot con Streamlit y LangChain para Q&A de documentos con memoria de conversación, deployable en Streamlit Cloud.',
+      challenge: 'Chatear con un LLM desde el navegador sin configuración pesada.',
+      impact: 'Un chatbot Streamlit desplegable que streamea respuestas con modelos de Groq (Llama 3.3 70B, Llama 3.1 8B, Gemma 2), con selector de modelo en la barra lateral e historial de conversación en la sesión.',
     },
     'Coppay': {
       challenge: 'Los fondos de las cooperadoras escolares son opacos y fácilmente corruptibles: poca transparencia y sin participación de la comunidad en cómo se gasta el dinero.',
